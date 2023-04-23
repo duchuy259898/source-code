@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="itemUseDivisionGroup">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="focusCycleRoot" type="boolean" value="true"/>
+    <Property name="focusTraversalPolicy" type="java.awt.FocusTraversalPolicy" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection component="&#x30d5;&#x30a9;&#x30fc;&#x30e0;" name="focusTraversalPolicy" type="property"/>
+    </Property>
+    <Property name="focusTraversalPolicyProvider" type="boolean" value="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="itemScrollPane" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="productNoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="janCodeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="productNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="priceLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="priceLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="itemClass" alignment="0" max="32767" attributes="1"/>
+                              <Component id="itemName" alignment="0" pref="291" max="32767" attributes="1"/>
+                          </Group>
+                          <Component id="janCode" linkSize="1" alignment="0" min="0" pref="0" max="32767" attributes="1"/>
+                          <Component id="itemNo" linkSize="1" alignment="0" pref="0" max="32767" attributes="1"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="1">
+                                      <Component id="itemUseDivision1Radio" min="-2" pref="75" max="-2" attributes="1"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="itemUseDivision2Radio" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="price" linkSize="1" min="-2" pref="93" max="-2" attributes="1"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="priceLabel3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="itemUseDivision3Radio" min="-2" pref="81" max="-2" attributes="0"/>
+                                          <Component id="taxOffPrice" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="chkPrepaId" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="lblPrepaidPrice" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="txtPrepaidPrice" min="-2" pref="93" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="priceLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="priceLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="placeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="7" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="useProperStock" linkSize="1" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                          <Component id="sellProperStock" linkSize="1" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="place" min="-2" pref="117" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Component id="displaySeqLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="displaySeq" min="-2" pref="71" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="addButton" min="-2" pref="92" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="renewButton" min="-2" pref="92" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="deleteButton" min="-2" pref="92" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="itemClass" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="productNoLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="itemNo" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="janCodeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="janCode" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="productNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="itemName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="priceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="price" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="taxOffPrice" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="priceLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="priceLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="itemUseDivision1Radio" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="itemUseDivision2Radio" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="itemUseDivision3Radio" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="priceLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="useProperStock" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="lblPrepaidPrice" max="32767" attributes="0"/>
+                  <Component id="txtPrepaidPrice" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sellProperStock" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="priceLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="chkPrepaId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="placeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="displaySeqLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="displaySeq" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="place" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="addButton" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="renewButton" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="deleteButton" min="-2" pref="25" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <Component id="itemScrollPane" pref="382" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="productNoLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5546;&#x54c1;No."/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="itemScrollPane">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="item">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="9" rowCount="1">
+                <Column editable="false" title="&#x5546;&#x54c1;No." type="java.lang.String"/>
+                <Column editable="false" title="&#x5546;&#x54c1;&#x540d;" type="java.lang.String"/>
+                <Column editable="false" title="&#x4fa1;&#x683c;(&#x7a0e;&#x8fbc;)" type="java.lang.Long"/>
+                <Column editable="false" title="&#x696d;&#x52d9;&#x9069;&#x6b63;&#x5728;&#x5eab;" type="java.lang.Integer"/>
+                <Column editable="false" title="&#x5e97;&#x8ca9;&#x9069;&#x6b63;&#x5728;&#x5eab;" type="java.lang.Integer"/>
+                <Column editable="true" title="&lt;html&gt;&#x30d1;&#x30b9;&#x30d6;&#x30c3;&#x30af;&lt;br&gt;&#x5229;&#x7528;&#x53ef;&#x80fd;&#x984d;" type="java.lang.Integer"/>
+                <Column editable="false" title="&#x30d1;&#x30b9;&#x30d6;&#x30c3;&#x30af;" type="java.lang.String"/>
+                <Column editable="false" title="&#x7f6e;&#x5834;" type="java.lang.String"/>
+                <Column editable="false" title="&#x8868;&#x793a;&#x9806;" type="java.lang.Integer"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="dc" green="dc" red="dc" type="rgb"/>
+            </Property>
+            <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="itemMouseReleased"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="itemKeyReleased"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="item.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);&#xa;item.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(item, SystemInfo.getTableHeaderRenderer());&#xa;item.setRowHeight(SystemInfo.TABLE_ROW_HEIGHT);&#xa;this.initTableColumnWidth();&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(item);&#xa;item.setDefaultRenderer(String.class, new TableCellAlignRenderer());&#xa;SwingUtil.setJTableHeaderRenderer(item, SystemInfo.getTableHeaderRenderer());"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="price">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <Events>
+        <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="priceCaretUpdate"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)price.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="priceLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x4fa1;&#x683c;&#xff08;&#x7a0e;&#x8fbc;&#xff09;"/>
+      </Properties>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="itemName">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="columns" type="int" value="30"/>
+        <Property name="inputKanji" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)itemName.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(30));"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="itemNo">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="columns" type="int" value="15"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)itemNo.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(15));"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="displaySeq">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="displaySeqFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)displaySeq.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="displaySeqLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x633f;&#x5165;&#x4f4d;&#x7f6e;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="productNameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5546;&#x54c1;&#x540d;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="itemClass">
+      <Properties>
+        <Property name="maximumRowCount" type="int" value="12"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemClassActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JComboBox(new DefaultComboBoxModel(mics.toArray())&#xa;{&#xa;&#x9;public void setSelectedItem(Object o)&#xa;&#x9;{&#xa;&#x9;&#x9;super.setSelectedItem(o);&#xa;&#x9;}&#xa;});"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="&#xa;&#x9;&#x9;try&#xa;&#x9;&#x9;{&#xa;&#x9;&#x9;&#x9;ConnectionWrapper&#x9;con&#x9;=&#x9;SystemInfo.getConnection();&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;mics.load(con);&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;con.close();&#xa;&#x9;&#x9;}&#xa;&#x9;&#x9;catch(SQLException e)&#xa;&#x9;&#x9;{&#xa;&#x9;&#x9;&#x9;SystemInfo.getLogger().log(Level.SEVERE, e.getLocalizedMessage(), e);&#xa;&#x9;&#x9;}"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5206;&#x985e;&#x540d;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="janCodeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="JAN&#x30b3;&#x30fc;&#x30c9;"/>
+      </Properties>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="janCode">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="columns" type="int" value="15"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)janCode.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(13, CustomFilter.NUMBER));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="priceLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x696d;&#x52d9;&#x9069;&#x6b63;&#x5728;&#x5eab;"/>
+      </Properties>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="useProperStock">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)useProperStock.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="sellProperStock">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)sellProperStock.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="priceLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5e97;&#x8ca9;&#x9069;&#x6b63;&#x5728;&#x5eab;"/>
+      </Properties>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="taxOffPrice">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextFieldEx(SystemInfo.getDecimalFormatter());"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)price.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMERIC));"/>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MstItemPanel_taxOffPrice"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="priceLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x4fa1;&#x683c;&#xff08;&#x7a0e;&#x629c;&#xff09;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="placeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x7f6e;&#x5834;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="addButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/insert_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/insert_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="renewButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="renewButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="deleteButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/delete_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/delete_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="itemUseDivision1Radio">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="itemUseDivisionGroup"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x5e97;&#x8ca9;&#x306e;&#x307f;"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+          </Border>
+        </Property>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="itemUseDivision2Radio">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="itemUseDivisionGroup"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x696d;&#x52d9;&#x306e;&#x307f;"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+          </Border>
+        </Property>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="itemUseDivision3Radio">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="itemUseDivisionGroup"/>
+        </Property>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="&#x696d;&#x52d9;&#xff0b;&#x5e97;&#x8ca9;"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+          </Border>
+        </Property>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="priceLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x4f7f;&#x7528;&#x533a;&#x5206;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="place">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JComboBox(new DefaultComboBoxModel(mps.toArray())&#xa;{&#xa;&#x9;public void setSelectedItem(Object o)&#xa;&#x9;{&#xa;&#x9;&#x9;super.setSelectedItem(o);&#xa;&#x9;}&#xa;});"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="&#xa;&#x9;&#x9;try&#xa;&#x9;&#x9;{&#xa;&#x9;&#x9;&#x9;ConnectionWrapper&#x9;con&#x9;=&#x9;SystemInfo.getConnection();&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;mps.load(con);&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;con.close();&#xa;&#x9;&#x9;&#x9;&#xa;&#x9;&#x9;&#x9;mps.add(0, new MstPlace());&#xa;&#x9;&#x9;}&#xa;&#x9;&#x9;catch(SQLException e)&#xa;&#x9;&#x9;{&#xa;&#x9;&#x9;&#x9;SystemInfo.getLogger().log(Level.SEVERE, e.getLocalizedMessage(), e);&#xa;&#x9;&#x9;}"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPrepaidPrice">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30d1;&#x30b9;&#x30d6;&#x30c3;&#x30af;&#x5229;&#x7528;&#x53ef;&#x80fd;&#x984d;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtPrepaidPrice">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="((PlainDocument)txtPrepaidPrice.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMBER));&#xa;txtPrepaidPrice.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));&#xa;&#xa;txtPrepaidPrice.setHorizontalAlignment(javax.swing.JTextField.RIGHT);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkPrepaId">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30d1;&#x30b9;&#x30d6;&#x30c3;&#x30af;"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="chkPrepaId.setOpaque(false);"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

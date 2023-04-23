@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.3" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="monthGroup">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="focusCycleRoot" type="boolean" value="true"/>
+    <Property name="focusTraversalPolicy" type="java.awt.FocusTraversalPolicy" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection component="&#x30d5;&#x30a9;&#x30fc;&#x30e0;" name="focusTraversalPolicy" type="property"/>
+    </Property>
+  </Properties>
+  <Events>
+    <EventHandler event="hierarchyChanged" listener="java.awt.event.HierarchyListener" parameters="java.awt.event.HierarchyEvent" handler="formHierarchyChanged"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="paymentMethodsScrollPane" alignment="0" pref="426" max="32767" attributes="0"/>
+                  <Component id="cutoffDayLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="paymentMethodNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="addButton" min="-2" pref="92" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="renewButton" min="-2" pref="92" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="receiptDayLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cutoffDay" min="-2" pref="38" max="-2" attributes="1"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dayLabel0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="receiptDay" min="-2" pref="37" max="-2" attributes="1"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dayLabel1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="thisMonth" min="-2" max="-2" attributes="1"/>
+                                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="nextMonth" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="monthAfterNext" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="paymentMethodName" alignment="0" pref="249" max="32767" attributes="0"/>
+                                  <Component id="paymentClass" alignment="0" pref="249" max="32767" attributes="1"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="deleteButton" min="-2" pref="92" max="-2" attributes="0"/>
+                          <Component id="chkPrepaid" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="paymentClass" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="paymentMethodNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="paymentMethodName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cutoffDayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cutoffDay" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="dayLabel0" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="thisMonth" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="nextMonth" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="monthAfterNext" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="receiptDay" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="dayLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="receiptDayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="1">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="chkPrepaid" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="addButton" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="renewButton" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="deleteButton" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="paymentMethodsScrollPane" pref="379" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="cutoffDayLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x7de0;&#x65e5;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="nextMonth">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="monthGroup"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x7fcc;&#x6708;"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+          </Border>
+        </Property>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="paymentMethodName">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="columns" type="int" value="20"/>
+        <Property name="inputKanji" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)paymentMethodName.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(16));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5165;&#x91d1;&#x6708;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="dayLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x65e5;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="receiptDayLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5165;&#x91d1;&#x65e5;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="deleteButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/delete_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/delete_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="addButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/insert_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/insert_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x533a;&#x5206;&#x540d;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="paymentClass">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="paymentClassActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="for(MstPaymentClass mpc : paymentClassList)&#xa;&#x9;paymentClass.addItem(mpc.getPaymentClassName());"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="cutoffDay">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="columns" type="int" value="2"/>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.geobeck.swing.JFormattedTextFieldEx(&#xa;&#x9;&#x9;FormatterCreator.createNumberFormatter(2,&#xa;&#x9;&#x9;&#x9;&#x9;1, 31));"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="paymentMethodsScrollPane">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="paymentMethods">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="5" rowCount="4">
+                <Column editable="false" title="&#x652f;&#x6255;&#x65b9;&#x6cd5;&#x540d;" type="java.lang.String"/>
+                <Column editable="false" title="&#x7de0;&#x65e5;" type="java.lang.Integer"/>
+                <Column editable="false" title="&#x5165;&#x91d1;&#x6708;" type="java.lang.String"/>
+                <Column editable="false" title="&#x5165;&#x91d1;&#x65e5;" type="java.lang.Integer"/>
+                <Column editable="false" title="&#x30d7;&#x30ea;&#x30da;&#x30a4;&#x30c9;" type="java.lang.String"/>
+              </Table>
+            </Property>
+            <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="dc" green="dc" red="dc" type="rgb"/>
+            </Property>
+            <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="paymentMethodsMouseReleased"/>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="paymentMethodsKeyReleased"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="paymentMethods.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);&#xa;paymentMethods.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(paymentMethods, SystemInfo.getTableHeaderRenderer());&#xa;paymentMethods.setRowHeight(SystemInfo.TABLE_ROW_HEIGHT);&#xa;this.initTableColumnWidth();&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(paymentMethods);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="renewButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="renewButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="thisMonth">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="monthGroup"/>
+        </Property>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="&#x5f53;&#x6708;"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+          </Border>
+        </Property>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="receiptDay">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="columns" type="int" value="2"/>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.geobeck.swing.JFormattedTextFieldEx(&#xa;&#x9;&#x9;FormatterCreator.createNumberFormatter(2,&#xa;&#x9;&#x9;&#x9;&#x9;1, 31));"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)receiptDay.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(2, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="dayLabel0">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x65e5;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="monthAfterNext">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="monthGroup"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x7fcc;&#x3005;&#x6708;"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+          </Border>
+        </Property>
+        <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+          <Insets value="[0, 0, 0, 0]"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="paymentMethodNameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x652f;&#x6255;&#x65b9;&#x6cd5;&#x540d;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkPrepaid">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30d7;&#x30ea;&#x30da;&#x30a4;&#x30c9;&#x5229;&#x7528;"/>
+        <Property name="opaque" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="StarReceipt1"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="150"
+		 pageHeight="1133"
+		 columnWidth="142"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="8"
+		 topMargin="8"
+		 bottomMargin="8"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<import value="java.math.*" />
+
+	<parameter name="shopName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="phoneNumber" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="customerName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="subtotal" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="tax" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="sumtotal" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="outOfValue" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="changeValue" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="message" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="staffName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="logoImage" isForPrompting="false" class="javax.swing.ImageIcon"/>
+	<parameter name="sosiaID" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="discount" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="footerImage" isForPrompting="false" class="javax.swing.ImageIcon"/>
+	<parameter name="faxNumber" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="postalCode" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="address1" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="address2" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="address3" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="address4" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="customerNo" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="slipNo" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="chargeStaffName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="prevPoint" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="addPoint" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="usePoint" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="totalPoint" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="cashValue" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="cardValue" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="allDiscount" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="eCashValue" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="giftValue" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="subtotalInTax" isForPrompting="false" class="java.lang.Long"/>
+	<parameter name="cardTitle" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="eCashTitle" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="giftTitle" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="salesDate" isForPrompting="true" class="java.lang.String"/>
+	<parameter name="taxesSubReport" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="taxesDataSource" isForPrompting="false" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+
+	<field name="dataType" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="num" class="java.lang.Integer"/>
+	<field name="value" class="java.lang.Long"/>
+	<field name="taxExcluded" class="java.lang.Boolean"/>
+	<field name="taxOffValue" class="java.lang.Long"/>
+	<field name="discountTaxExcluded" class="java.lang.Boolean"/>
+	<field name="consumptionNum" class="java.lang.Double"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="120"  isSplitAllowed="true" >
+				<printWhenExpression><![CDATA[new Boolean($P{logoImage} != null)]]></printWhenExpression>
+				<image  vAlign="Bottom" hAlign="Center" onErrorType="Blank" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="0"
+						width="140"
+						height="111"
+						key="image-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="2" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.awt.Image"><![CDATA[$P{logoImage}.getImage()]]></imageExpression>
+				</image>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="214"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="0"
+						width="140"
+						height="13"
+						key="textField-13"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{shopName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="32"
+						y="49"
+						width="108"
+						height="12"
+						key="textField-14"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{phoneNumber} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{phoneNumber}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="103"
+						width="140"
+						height="17"
+						key="textField-15"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean(!$P{customerName}.equals(""))]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isUnderline="true" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{customerName} + " 様"]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="210"
+						width="148"
+						height="1"
+						key="line-1"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<textField isStretchWithOverflow="false" pattern="SOSIA会員№ #" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="133"
+						width="140"
+						height="13"
+						key="textField-28"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{sosiaID} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$P{sosiaID}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Transparent"
+						x="0"
+						y="13"
+						width="140"
+						height="12"
+						key="textField-31"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{postalCode}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="25"
+						width="140"
+						height="12"
+						key="textField-32"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{address1} + $P{address2} + $P{address3}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="37"
+						width="140"
+						height="12"
+						key="textField-33"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{address4}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="32"
+						y="61"
+						width="108"
+						height="12"
+						key="textField-34"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{faxNumber} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{faxNumber}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Transparent"
+						x="0"
+						y="74"
+						width="141"
+						height="19"
+						key="staticText-7"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isUnderline="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[領収書]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="46"
+						y="182"
+						width="94"
+						height="13"
+						key="textField-23"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="2" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{staffName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="120"
+						width="140"
+						height="13"
+						key="textField-35"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{customerNo}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="156"
+						width="140"
+						height="13"
+						key="textField-36"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA["伝票№ " + $P{slipNo}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Transparent"
+						x="0"
+						y="87"
+						width="141"
+						height="14"
+						key="staticText-8"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" lineSpacing="Single">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isUnderline="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[---------------------------------------------]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Transparent"
+						x="0"
+						y="89"
+						width="141"
+						height="14"
+						key="staticText-9"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" lineSpacing="Single">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isUnderline="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[---------------------------------------------]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="182"
+						width="48"
+						height="13"
+						key="staticText-10"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[レジ担当：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="195"
+						width="48"
+						height="13"
+						key="staticText-11"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[主担当：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="46"
+						y="195"
+						width="94"
+						height="13"
+						key="textField-37"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="2" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{chargeStaffName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="49"
+						width="32"
+						height="12"
+						key="staticText-21"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{phoneNumber} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[TEL： ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="61"
+						width="32"
+						height="12"
+						key="staticText-22"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{faxNumber} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[FAX： ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="169"
+						width="48"
+						height="13"
+						key="staticText-11"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[売上日：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="46"
+						y="169"
+						width="94"
+						height="13"
+						key="textField-37"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="2" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{salesDate}]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="28"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="0"
+						width="140"
+						height="16"
+						key="textField-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Bottom">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="119"
+						y="16"
+						width="21"
+						height="9"
+						key="textField-27"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[new String($F{taxExcluded}.booleanValue() ? "外" : "内")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="5"
+						y="16"
+						width="66"
+						height="9"
+						key="textField-30"
+						positionType="Float">
+							<printWhenExpression><![CDATA[new Boolean(!$F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA['￥' + new String( ((new DecimalFormat("#,##0")).format(
+$F{taxExcluded}.booleanValue()
+ ? $F{taxOffValue}.longValue()
+ : $F{value}.longValue()
+)).toString() + " X " + $F{num}.toString() + "点")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="5"
+						y="16"
+						width="66"
+						height="9"
+						key="textField-30"
+						positionType="Float">
+							<printWhenExpression><![CDATA[new Boolean($F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA['￥' + new String( ((new DecimalFormat("#,##0")).format(
+$F{taxExcluded}.booleanValue()
+ ? $F{taxOffValue}.longValue()
+ : $F{value}.longValue()
+)).toString() + " X " + $F{consumptionNum}.toString() + "点")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="71"
+						y="16"
+						width="50"
+						height="9"
+						key="textField-16"
+						positionType="Float">
+							<printWhenExpression><![CDATA[new Boolean(!$F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$F{taxExcluded}.booleanValue()
+ ? new Long( ($F{num}.intValue()) *($F{taxOffValue}.longValue()) )
+ : new Long( ($F{num}.intValue()) *($F{value}.longValue()) )]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="71"
+						y="16"
+						width="48"
+						height="9"
+						key="textField-16"
+						positionType="Float">
+							<printWhenExpression><![CDATA[new Boolean($F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{taxExcluded}.booleanValue()
+ ? new BigDecimal(String.valueOf($F{consumptionNum}.doubleValue())).multiply(new BigDecimal($F{taxOffValue}.longValue()) ).setScale(0, RoundingMode.UP)
+ : new BigDecimal(String.valueOf($F{consumptionNum}.doubleValue())).multiply(new BigDecimal($F{value}.longValue()) ).setScale(0, RoundingMode.UP)]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+				<printWhenExpression><![CDATA[new Boolean($P{footerImage} != null)]]></printWhenExpression>
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="394"  isSplitAllowed="true" >
+				<elementGroup><!--  Start: 1 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="31"
+						width="54"
+						height="13"
+						key="staticText-1"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[小計]]></text>
+				</staticText>
+				</elementGroup><!-- End 1 !-->
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="16"
+						width="148"
+						height="1"
+						key="line-2"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<elementGroup><!--  Start: 2 !-->
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="57"
+						y="31"
+						width="74"
+						height="13"
+						key="textField-17"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{subtotal}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 2 !-->
+				<elementGroup><!--  Start: 3 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="86"
+						width="55"
+						height="13"
+						key="staticText-2"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[( 消費税]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="57"
+						y="86"
+						width="74"
+						height="13"
+						key="textField-18"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{tax}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 3 !-->
+				<elementGroup><!--  Start: 4 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="72"
+						width="54"
+						height="13"
+						key="staticText-3"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[合計]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="57"
+						y="72"
+						width="74"
+						height="13"
+						key="textField-19"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{sumtotal}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 4 !-->
+				<elementGroup><!--  Start: 5 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="100"
+						width="54"
+						height="13"
+						key="staticText-4"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[お預り]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="57"
+						y="100"
+						width="74"
+						height="13"
+						key="textField-20"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{outOfValue}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 5 !-->
+				<elementGroup><!--  Start: 6 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="166"
+						width="61"
+						height="13"
+						key="staticText-5"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[お釣り]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="63"
+						y="166"
+						width="68"
+						height="13"
+						key="textField-21"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{changeValue}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 6 !-->
+				<elementGroup><!--  Start: 7 !-->
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="3"
+						y="262"
+						width="139"
+						height="16"
+						key="textField-22"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{message}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 7 !-->
+				<elementGroup><!--  Start: 8 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="58"
+						width="54"
+						height="13"
+						key="staticText-6"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[全体割引]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0;¤ -#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="57"
+						y="58"
+						width="74"
+						height="13"
+						key="textField-29"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{allDiscount}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 8 !-->
+				<elementGroup><!--  Start: 9 !-->
+				<image  vAlign="Top" hAlign="Center" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="2"
+						y="281"
+						width="140"
+						height="111"
+						key="image-2"
+						positionType="FixRelativeToBottom"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{footerImage} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.awt.Image"><![CDATA[$P{footerImage}.getImage()]]></imageExpression>
+				</image>
+				</elementGroup><!-- End 9 !-->
+				<elementGroup><!--  Start: 10 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="72"
+						y="183"
+						width="60"
+						height="13"
+						key="textField-38"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{prevPoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{prevPoint} + " P"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="183"
+						width="70"
+						height="13"
+						key="staticText-12"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{prevPoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[前回ポイント：]]></text>
+				</staticText>
+				</elementGroup><!-- End 10 !-->
+				<elementGroup><!--  Start: 11 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="196"
+						width="70"
+						height="13"
+						key="staticText-13"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{addPoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[加算ポイント：]]></text>
+				</staticText>
+				</elementGroup><!-- End 11 !-->
+				<elementGroup><!--  Start: 12 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="209"
+						width="70"
+						height="13"
+						key="staticText-14"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{usePoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[使用ポイント：]]></text>
+				</staticText>
+				</elementGroup><!-- End 12 !-->
+				<elementGroup><!--  Start: 13 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="222"
+						width="70"
+						height="13"
+						key="staticText-15"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{totalPoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[ポイント合計：]]></text>
+				</staticText>
+				</elementGroup><!-- End 13 !-->
+				<elementGroup><!--  Start: 14 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="72"
+						y="196"
+						width="60"
+						height="13"
+						key="textField-39"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{addPoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{addPoint} + " P"]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 14 !-->
+				<elementGroup><!--  Start: 15 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="72"
+						y="209"
+						width="60"
+						height="13"
+						key="textField-40"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{usePoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{usePoint} + " P"]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 15 !-->
+				<elementGroup><!--  Start: 16 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="72"
+						y="222"
+						width="60"
+						height="13"
+						key="textField-41"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{totalPoint} != null)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{totalPoint} + " P"]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 16 !-->
+				<elementGroup><!--  Start: 17 !-->
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="63"
+						y="113"
+						width="68"
+						height="13"
+						key="textField-43"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{cashValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{cashValue}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="113"
+						width="61"
+						height="13"
+						key="staticText-17"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{cashValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[( 現金]]></text>
+				</staticText>
+				</elementGroup><!-- End 17 !-->
+				<elementGroup><!--  Start: 18 !-->
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="63"
+						y="126"
+						width="68"
+						height="13"
+						key="textField-44"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{cardValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{cardValue}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="132"
+						y="126"
+						width="9"
+						height="13"
+						key="staticText-19"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{cardValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[)]]></text>
+				</staticText>
+				</elementGroup><!-- End 18 !-->
+				<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="121"
+						y="2"
+						width="19"
+						height="13"
+						key="textField-45"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{discount}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[new String(
+!$F{discountTaxExcluded}.booleanValue() && $F{taxExcluded}.booleanValue()
+? "外"
+: $F{discountTaxExcluded}.booleanValue() ? "外" : "内"
+)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="¤ #,##0;¤ -#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="71"
+						y="2"
+						width="50"
+						height="13"
+						key="textField-47"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{discount}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{discount}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="15"
+						y="2"
+						width="56"
+						height="13"
+						key="staticText-20"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{discount}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[明細割引]]></text>
+				</staticText>
+				<elementGroup><!--  Start: 19 !-->
+				<line direction="TopDown">
+					<reportElement
+						x="2"
+						y="238"
+						width="141"
+						height="1"
+						key="line-3"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<graphicElement stretchType="RelativeToTallestObject"/>
+				</line>
+				</elementGroup><!-- End 19 !-->
+				<elementGroup><!--  Start: 20 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="132"
+						y="86"
+						width="9"
+						height="13"
+						key="staticText-23"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[)]]></text>
+				</staticText>
+				</elementGroup><!-- End 20 !-->
+				<elementGroup><!--  Start: 21 !-->
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="63"
+						y="139"
+						width="68"
+						height="13"
+						key="textField-48"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{eCashValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{eCashValue}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="132"
+						y="139"
+						width="9"
+						height="13"
+						key="staticText-25"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{eCashValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[)]]></text>
+				</staticText>
+				</elementGroup><!-- End 21 !-->
+				<elementGroup><!--  Start: 22 !-->
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="63"
+						y="152"
+						width="68"
+						height="13"
+						key="textField-49"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{giftValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{giftValue}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="132"
+						y="152"
+						width="9"
+						height="13"
+						key="staticText-27"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{giftValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[)]]></text>
+				</staticText>
+				</elementGroup><!-- End 22 !-->
+				<elementGroup><!--  Start: 23 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="2"
+						y="44"
+						width="54"
+						height="13"
+						key="staticText-28"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{subtotalInTax}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[( 税込小計]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="57"
+						y="44"
+						width="74"
+						height="13"
+						key="textField-50"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{subtotalInTax}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{subtotalInTax}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="132"
+						y="44"
+						width="9"
+						height="13"
+						key="staticText-29"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{subtotalInTax}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[)]]></text>
+				</staticText>
+				</elementGroup><!-- End 23 !-->
+				<elementGroup><!--  Start: 24 !-->
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Transparent"
+						x="2"
+						y="126"
+						width="61"
+						height="13"
+						key="textField-51"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{cardValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="5" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{cardTitle}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 24 !-->
+				<elementGroup><!--  Start: 25 !-->
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="2"
+						y="139"
+						width="61"
+						height="13"
+						key="textField-52"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{eCashValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="5" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{eCashTitle}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 25 !-->
+				<elementGroup><!--  Start: 26 !-->
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="2"
+						y="152"
+						width="61"
+						height="13"
+						key="textField-53"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{giftValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="5" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{giftTitle}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 26 !-->
+				<elementGroup><!--  Start: 27 !-->
+				<textField isStretchWithOverflow="true" pattern="yyyy年MM月dd日 HH:mm:ss" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="34"
+						y="243"
+						width="108"
+						height="16"
+						key="textField-22"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="3"
+						y="243"
+						width="31"
+						height="16"
+						key="staticText-11"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="7" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[出力：]]></text>
+				</staticText>
+				</elementGroup><!-- End 27 !-->
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="0"
+						y="18"
+						width="138"
+						height="12"
+						key="subreport-1"
+						stretchType="RelativeToTallestObject"
+						isPrintRepeatedValues="false"
+						isRemoveLineWhenBlank="true"/>
+					<dataSourceExpression><![CDATA[$P{taxesDataSource}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{taxesSubReport}]]></subreportExpression>
+				</subreport>
+				<elementGroup><!--  Start: 28 !-->
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="132"
+						y="113"
+						width="9"
+						height="13"
+						key="staticText-30"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true">
+							<printWhenExpression><![CDATA[new Boolean($P{cashValue}.longValue() != 0)]]></printWhenExpression>
+						</reportElement>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[)]]></text>
+				</staticText>
+				</elementGroup><!-- End 28 !-->
+			</band>
+		</summary>
+</jasperReport>

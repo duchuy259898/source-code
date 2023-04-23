@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JScrollBar" name="jScrollBar1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="null" type="code"/>
+    </Property>
+  </Properties>
+  <AccessibilityProperties>
+    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="985"/>
+    <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value="558"/>
+  </AccessibilityProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="tableAllInfo" min="-2" pref="2000" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="tableAllInfo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTable" name="tableAllInfo">
+      <Properties>
+        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+          <Table columnCount="34" rowCount="59">
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 1" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 2" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 3" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 4" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 5" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 6" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 7" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 8" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 9" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 10" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 11" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 12" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 13" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 14" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 15" type="java.lang.String"/>
+            <Column editable="true" title="Title 16" type="java.lang.Object"/>
+            <Column editable="true" title="Title 17" type="java.lang.Object"/>
+            <Column editable="true" title="Title 18" type="java.lang.Object"/>
+            <Column editable="true" title="Title 19" type="java.lang.Object"/>
+            <Column editable="true" title="Title 20" type="java.lang.Object"/>
+            <Column editable="true" title="Title 21" type="java.lang.Object"/>
+            <Column editable="true" title="Title 22" type="java.lang.Object"/>
+            <Column editable="true" title="Title 23" type="java.lang.Object"/>
+            <Column editable="true" title="Title 24" type="java.lang.Object"/>
+            <Column editable="true" title="Title 25" type="java.lang.Object"/>
+            <Column editable="true" title="Title 26" type="java.lang.Object"/>
+            <Column editable="true" title="Title 27" type="java.lang.Object"/>
+            <Column editable="true" title="Title 28" type="java.lang.Object"/>
+            <Column editable="true" title="Title 29" type="java.lang.Object"/>
+            <Column editable="true" title="Title 30" type="java.lang.Object"/>
+            <Column editable="true" title="Title 31" type="java.lang.Object"/>
+            <Column editable="true" title="Title 32" type="java.lang.Object"/>
+            <Column editable="true" title="Title 33" type="java.lang.Object"/>
+            <Column editable="true" title="Title 34" type="java.lang.Object"/>
+          </Table>
+        </Property>
+        <Property name="alignmentX" type="float" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.CENTER_ALIGNMENT" type="code"/>
+        </Property>
+        <Property name="alignmentY" type="float" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.CENTER_ALIGNMENT" type="code"/>
+        </Property>
+        <Property name="cellSelectionEnabled" type="boolean" value="true"/>
+        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+          <TableColumnModel selectionModel="2">
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+              <Title/>
+              <Editor/>
+              <Renderer/>
+            </Column>
+          </TableColumnModel>
+        </Property>
+        <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[0, 0]"/>
+        </Property>
+        <Property name="showHorizontalLines" type="boolean" value="false"/>
+        <Property name="showVerticalLines" type="boolean" value="false"/>
+        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="tableAllInfo = new javax.swing.JTable(new DefaultTableModel()){&#xa;      public boolean isCellEditable(int rowIndex, int colIndex) {&#xa;          if( ( rowIndex == 0 ) || ( colIndex == 0 ) || ( colIndex == 1 ) )&#xa;              return false;   //Disallow the editing of any cell&#xa;          else if( ( rowIndex &lt;27 ))&#xa;          {&#xa;              return false;&#xa;          }&#xa;          else if( rowIndex == 29 || rowIndex == 41 || rowIndex == 44 || rowIndex == 48 || rowIndex == 58)&#xa;          {&#xa;              return false;&#xa;          }&#xa;          else if( colIndex == 33 )&#xa;          {&#xa;              return false;&#xa;          }&#xa;          else&#xa;          {&#xa;              return true;&#xa;          }&#xa;      }&#xa;    };"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

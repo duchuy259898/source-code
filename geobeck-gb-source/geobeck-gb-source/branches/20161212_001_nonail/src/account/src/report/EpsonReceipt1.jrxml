@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EpsonReceipt" pageWidth="150" pageHeight="1133" columnWidth="134" leftMargin="8" rightMargin="8" topMargin="8" bottomMargin="8" uuid="ee7a0b0f-651f-4aad-a04f-b00bf807b7d7">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1195"/>
+	<import value="java.math.*"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="shopName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="phoneNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="customerName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="subtotal" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="tax" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="sumtotal" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="outOfValue" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="changeValue" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="message" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="staffName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="logoImage" class="javax.swing.ImageIcon" isForPrompting="false"/>
+	<parameter name="sosiaID" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="discount" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="footerImage" class="javax.swing.ImageIcon" isForPrompting="false"/>
+	<parameter name="faxNumber" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="postalCode" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address1" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address3" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="address4" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="customerNo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="slipNo" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="chargeStaffName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="prevPoint" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="addPoint" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="usePoint" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="totalPoint" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="cashValue" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="cardValue" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="allDiscount" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="eCashValue" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="giftValue" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="subtotalInTax" class="java.lang.Long" isForPrompting="false"/>
+	<parameter name="cardTitle" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="eCashTitle" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="giftTitle" class="java.lang.String" isForPrompting="false"/>
+	<field name="dataType" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="num" class="java.lang.Integer"/>
+	<field name="value" class="java.lang.Long"/>
+	<field name="taxExcluded" class="java.lang.Boolean"/>
+	<field name="taxOffValue" class="java.lang.Long"/>
+	<field name="discountTaxExcluded" class="java.lang.Boolean"/>
+	<field name="consumptionNum" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Prevent">
+			<printWhenExpression><![CDATA[new Boolean($P{logoImage} != null)]]></printWhenExpression>
+			<image hAlign="Center" vAlign="Bottom" onErrorType="Blank">
+				<reportElement uuid="e57d8c86-5bef-4135-a673-4263faf31b1c" key="image-1" x="0" y="0" width="139" height="111"/>
+				<box leftPadding="2">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{logoImage}.getImage()]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="214" splitType="Prevent">
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7d800126-0b6b-4768-a6b0-042394fb7b03" key="textField-13" x="0" y="0" width="140" height="13" isRemoveLineWhenBlank="true"/>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{shopName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="214ec039-4c6d-4643-b5d5-2ba14575015a" key="textField-14" x="31" y="49" width="109" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{phoneNumber} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{phoneNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="032073fd-f72b-463b-862d-e60ef5eac1d3" key="textField-15" x="0" y="103" width="140" height="17" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean(!$P{customerName}.equals(""))]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="false" isUnderline="true" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{customerName} + " 様"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="1186bf42-3303-4262-bce5-d7a908a24d5b" key="line-1" x="0" y="210" width="144" height="1"/>
+			</line>
+			<textField pattern="SOSIA会員№ #" isBlankWhenNull="true">
+				<reportElement uuid="4aa6db87-3474-43f5-8f25-007c5e4af90b" key="textField-28" x="0" y="133" width="140" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{sosiaID} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sosiaID}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7dba2fb1-5b2e-4101-b0df-76bb2e9dff22" key="textField-31" mode="Transparent" x="0" y="13" width="140" height="12" isRemoveLineWhenBlank="true"/>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{postalCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f604ffc0-799c-414c-82f5-73420bcb38a4" key="textField-32" x="0" y="25" width="140" height="12" isRemoveLineWhenBlank="true"/>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address1} + $P{address2} + $P{address3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c65fa306-7564-4c1a-9ea3-48a705133fa4" key="textField-33" x="0" y="37" width="140" height="12" isRemoveLineWhenBlank="true"/>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address4}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="fbced744-c5f4-4676-8e6a-97bdb078d580" key="textField-34" x="31" y="61" width="109" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{faxNumber} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{faxNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1bea2bb6-04f7-4fcc-95d7-a1324dd1c86c" key="staticText-7" mode="Transparent" x="0" y="74" width="139" height="19"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="11" isUnderline="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[領収書]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="02d61b03-cceb-42e0-8237-42a4abc23686" key="textField-23" x="48" y="182" width="92" height="13"/>
+				<box leftPadding="2" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{staffName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="yyyy年MM月dd日 (EEE) HH:mm" isBlankWhenNull="true">
+				<reportElement uuid="1c18250d-e983-4462-93c3-a0d80d050dff" key="textField-24" positionType="Float" x="0" y="169" width="140" height="13"/>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="a2652372-a5e0-4f05-a76b-1ff4280c1da5" key="textField-35" x="0" y="120" width="140" height="13" isRemoveLineWhenBlank="true"/>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{customerNo}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="44b7f0a0-07c1-45e0-b94a-392f4be24ae3" key="textField-36" x="0" y="156" width="140" height="13" isRemoveLineWhenBlank="true"/>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["伝票№ " + $P{slipNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="82b4ca57-93cb-40a4-b80a-fdb34b06bbf2" key="staticText-8" mode="Transparent" x="0" y="87" width="140" height="14"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10" isUnderline="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[---------------------------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e5832cd5-e3ee-48cd-a793-575e8d56dc23" key="staticText-9" mode="Transparent" x="0" y="89" width="140" height="14"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="10" isUnderline="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[---------------------------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3ded9db-7d95-49e9-9810-40d3add6f50e" key="staticText-10" mode="Opaque" x="0" y="182" width="48" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[レジ担当：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="34d19eef-9a90-41cc-a17e-16b8a13e7458" key="staticText-11" mode="Opaque" x="0" y="195" width="48" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[主担当：]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="4be4d7ef-568f-45f0-a701-8dd1bd78e5eb" key="textField-37" x="48" y="195" width="92" height="13"/>
+				<box leftPadding="2" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chargeStaffName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7a7dcf4f-c8b3-4ce4-ac2a-beafcdbc2712" key="staticText-21" mode="Opaque" x="0" y="49" width="31" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{phoneNumber} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[TEL： ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5103ea4f-24d9-46d0-9e53-bca36172f9c3" key="staticText-22" mode="Opaque" x="0" y="61" width="31" height="12" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{faxNumber} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[FAX： ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Prevent"/>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Prevent">
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="9e44dc6f-ebbb-46ca-b569-7a90fe3590ce" key="textField-1" x="0" y="0" width="140" height="16"/>
+				<box leftPadding="3" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Bottom">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="ffd9796e-ab86-40f5-aac1-d68f41b3aed1" key="textField-27" positionType="Float" x="124" y="16" width="14" height="9"/>
+				<box rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new String($F{taxExcluded}.booleanValue() ? "外" : "内")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
+				<reportElement uuid="ac68b172-d4e1-4c42-afb9-3732a9ddb70c" key="textField-30" positionType="Float" x="6" y="16" width="67" height="9">
+					<printWhenExpression><![CDATA[new Boolean(!$F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA['￥' + new String( ((new DecimalFormat("#,##0")).format(
+$F{taxExcluded}.booleanValue()
+ ? $F{taxOffValue}.longValue()
+ : $F{value}.longValue()
+)).toString() + " X " + $F{num}.toString() + "点")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
+				<reportElement uuid="d595e39e-187a-4ec5-9827-e16dce6dc5f5" key="textField-30" positionType="Float" x="4" y="16" width="67" height="9">
+					<printWhenExpression><![CDATA[new Boolean($F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA['￥' + new String( ((new DecimalFormat("#,##0")).format(
+$F{taxExcluded}.booleanValue()
+ ? $F{taxOffValue}.longValue()
+ : $F{value}.longValue()
+)).toString() + " X " + $F{consumptionNum}.toString() + "点")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="2c8c0dcb-51e4-4151-98ea-d5bc4b4e313a" key="textField-16" positionType="Float" x="71" y="16" width="53" height="9">
+					<printWhenExpression><![CDATA[new Boolean(!$F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{taxExcluded}.booleanValue()
+ ? new Long( ($F{num}.intValue()) *($F{taxOffValue}.longValue()) )
+ : new Long( ($F{num}.intValue()) *($F{value}.longValue()) )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="7e11baf9-725a-4d5a-b38c-c84f159f94cf" key="textField-16" positionType="Float" x="71" y="16" width="53" height="9">
+					<printWhenExpression><![CDATA[new Boolean($F{dataType}.equals(new Integer(6)))]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{taxExcluded}.booleanValue()
+ ? new BigDecimal(String.valueOf($F{consumptionNum}.doubleValue())).multiply(new BigDecimal($F{taxOffValue}.longValue())).setScale(0, RoundingMode.UP)
+ : new BigDecimal(String.valueOf($F{consumptionNum}.doubleValue())).multiply(new BigDecimal($F{value}.longValue())).setScale(0, RoundingMode.UP)]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Prevent"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Prevent">
+			<printWhenExpression><![CDATA[new Boolean($P{footerImage} != null)]]></printWhenExpression>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="369" splitType="Prevent">
+			<staticText>
+				<reportElement uuid="2fdd3a33-634d-4c09-9d0e-5c1401054575" key="staticText-1" mode="Opaque" x="0" y="17" width="48" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[小計]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="1d3eb5f8-e81a-4ff3-af63-16b4e2f11f36" key="line-2" x="0" y="16" width="144" height="1"/>
+			</line>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="46043672-2e7b-4ea2-a426-419bee608d23" key="textField-17" x="48" y="17" width="70" height="13"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7237701e-78f5-4345-80d2-6dff6bf96e4a" key="staticText-2" mode="Opaque" x="0" y="75" width="48" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[( 消費税]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="ae5b2820-5851-4f54-95e0-584193eaa63a" key="textField-18" x="48" y="75" width="70" height="13"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="34b6127d-9d5c-4ff2-a4fd-753a87185e62" key="staticText-3" mode="Opaque" x="0" y="58" width="48" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[合計]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="d37de6a8-9d7f-451f-af62-27d695822fa9" key="textField-19" x="48" y="58" width="70" height="13"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sumtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e0abdfb7-6439-461b-8aa8-c8922d30c860" key="staticText-4" mode="Opaque" x="0" y="89" width="48" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[お預り]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="779b0afe-5c30-45e0-9d88-a08ed1fd7189" key="textField-20" x="48" y="89" width="70" height="13"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{outOfValue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="78736b31-99c5-4e92-a721-bead903e639b" key="staticText-5" mode="Opaque" x="0" y="155" width="62" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[お釣り]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="961b80da-55f3-4977-9a2c-442ec7b0883e" key="textField-21" x="62" y="155" width="56" height="13"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{changeValue}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="0ce7fb84-8136-417c-95b3-d6bce4c1511b" key="textField-22" x="0" y="232" width="140" height="16" isRemoveLineWhenBlank="true"/>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="7" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{message}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="62bb6d85-8b43-4c6b-a198-198f4bcfaf4c" key="staticText-6" mode="Opaque" x="0" y="44" width="48" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[全体割引]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0;¤ -#,##0" isBlankWhenNull="true">
+				<reportElement uuid="1cff823d-633f-4646-91ec-026eb7ff148f" key="textField-29" x="48" y="44" width="70" height="13"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{allDiscount}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center" vAlign="Top">
+				<reportElement uuid="ae43bf02-7a0f-4c38-9854-162383ec97d3" key="image-2" positionType="Float" x="0" y="252" width="140" height="111" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{footerImage} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{footerImage}.getImage()]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="26ebd26a-1e99-47e8-ba1a-9cb1311e0fe9" key="textField-38" x="73" y="174" width="63" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{prevPoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{prevPoint} + " P"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a9937b3d-b9fc-46da-a48f-8673a68c9450" key="staticText-12" mode="Opaque" x="0" y="174" width="73" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{prevPoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[前回ポイント：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c08f9af3-74fc-4d97-8e4b-3208c047a785" key="staticText-13" mode="Opaque" x="0" y="187" width="73" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{addPoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[加算ポイント：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2f3c6422-aa95-4951-8798-fc7eedf67887" key="staticText-14" mode="Opaque" x="0" y="200" width="73" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{usePoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[使用ポイント：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ad9087bd-1829-4a16-9153-1421ec1219ba" key="staticText-15" mode="Opaque" x="0" y="213" width="73" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{totalPoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="false" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ポイント合計：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b534f36f-c4e8-4633-8b8b-fea9f43c2eb7" key="textField-39" x="73" y="187" width="63" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{addPoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{addPoint} + " P"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3c8206ce-bef0-436c-a613-6c51799a42d8" key="textField-40" x="73" y="200" width="63" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{usePoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{usePoint} + " P"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="4cb86120-5de2-4784-a111-9710cf20bdfa" key="textField-41" x="73" y="213" width="63" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{totalPoint} != null)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="4" rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPoint} + " P"]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="e3f78615-a3ba-42bd-9498-d4e30e66ecf9" key="textField-43" x="62" y="102" width="56" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{cashValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cashValue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="52f1699f-bea9-4803-b132-b66e7c1be974" key="staticText-16" mode="Opaque" x="121" y="103" width="15" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{cashValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="413b7c40-5fe8-4caa-8fb3-8e88c1e5da0a" key="staticText-17" mode="Opaque" x="0" y="102" width="62" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{cashValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="7">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[( 現金]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="f53addad-9d66-41b9-98f5-6aef41678a03" key="textField-44" x="62" y="115" width="56" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{cardValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cardValue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07a889ef-b198-456f-a5c9-c11fb4529685" key="staticText-19" mode="Opaque" x="121" y="116" width="15" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{cardValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement uuid="d1494d9f-9cda-4b5d-9564-dfb1e978056b" key="textField-45" x="125" y="2" width="15" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{discount}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box rightPadding="4">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new String(
+!$F{discountTaxExcluded}.booleanValue() && $F{taxExcluded}.booleanValue()
+? "外"
+: $F{discountTaxExcluded}.booleanValue() ? "外" : "内"
+)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="¤ #,##0;¤ -#,##0" isBlankWhenNull="true">
+				<reportElement uuid="be51f562-ab52-40a7-bed4-f56bf4223e8a" key="textField-47" x="75" y="2" width="50" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{discount}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{discount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5891840a-125b-45f5-9221-ffac7c80f2c1" key="staticText-20" mode="Opaque" x="13" y="2" width="62" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{discount}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[明細割引]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="bd2bacbc-c96c-4118-8910-0bde5d27713a" key="line-3" x="0" y="229" width="144" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="0f30a3e4-f888-4b65-b97d-6251612e6238" key="staticText-23" mode="Opaque" x="121" y="75" width="15" height="13"/>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="8d54f6e5-42cb-459c-bc2b-0dddd1f49bb1" key="textField-48" x="62" y="128" width="56" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{eCashValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{eCashValue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="67877615-5918-435e-a90a-4123839aa37e" key="staticText-25" mode="Opaque" x="121" y="129" width="15" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{eCashValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="257788b1-869d-4660-a628-7164fb398dd9" key="textField-49" x="62" y="141" width="56" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{giftValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{giftValue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7f248a21-4f91-466d-9a08-2e1579892897" key="staticText-27" mode="Opaque" x="121" y="142" width="15" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{giftValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="032195ef-223a-4129-bb30-70e581b7a6b8" key="staticText-28" mode="Opaque" x="0" y="30" width="48" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{subtotalInTax}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[( 税込小計]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0" isBlankWhenNull="true">
+				<reportElement uuid="3ff6acb8-d004-41a6-b984-de687fc928db" key="textField-50" x="48" y="30" width="70" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{subtotalInTax}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotalInTax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="36560cfb-61a6-40d5-b973-9131545f4600" key="staticText-29" mode="Opaque" x="120" y="30" width="15" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{subtotalInTax}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="59ad5899-9f72-4c8e-a8f9-49c34ce65daf" key="textField-51" x="0" y="115" width="62" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{cardValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="7">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cardTitle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="249a314d-4eeb-4365-b8ed-cb6b4d422939" key="textField-52" x="0" y="128" width="62" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{eCashValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="7">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{eCashTitle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement uuid="83b432b1-7a92-4076-824e-2c828d7a633e" key="textField-53" x="0" y="141" width="62" height="13" isRemoveLineWhenBlank="true">
+					<printWhenExpression><![CDATA[new Boolean($P{giftValue}.longValue() != 0)]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="7">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="8" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{giftTitle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

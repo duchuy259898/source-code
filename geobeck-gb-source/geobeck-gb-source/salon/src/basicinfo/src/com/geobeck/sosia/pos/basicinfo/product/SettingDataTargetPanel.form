@@ -1,0 +1,2134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="focusCycleRoot" type="boolean" value="true"/>
+    <Property name="focusTraversalPolicy" type="java.awt.FocusTraversalPolicy" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection component="&#x30d5;&#x30a9;&#x30fc;&#x30e0;" name="focusTraversalPolicy" type="property"/>
+    </Property>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1010, 2500]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="PanelTop" pref="998" max="32767" attributes="0"/>
+                  <Component id="PanelPage1" pref="998" max="32767" attributes="0"/>
+                  <Component id="PanelPage2" alignment="0" pref="998" max="32767" attributes="0"/>
+                  <Component id="PanelPage3" alignment="0" pref="998" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="PanelTop" min="-2" pref="56" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="PanelPage1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="PanelPage2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="PanelPage3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="194" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="PanelTop">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1000, 68]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbDate" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbshop" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbShopCategory" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lbShopCategoryvalue" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbShopValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbDateValue" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btBack" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="btNext" min="-2" pref="45" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="btRegist" min="-2" pref="92" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lbShopValue" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="lbDateValue" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="lbshop" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                  <Component id="lbDate" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lbShopCategory" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbShopCategoryvalue" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="btNext" alignment="0" pref="27" max="32767" attributes="0"/>
+                              <Component id="btBack" alignment="0" max="32767" attributes="0"/>
+                              <Component id="btRegist" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lbshop">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5e97;&#x8217;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbDate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5bfe;&#x8c61;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btBack">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="SystemInfo.getImageIcon(&quot;/button/common/back_small_off.jpg&quot;)" type="code"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
+            <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="SystemInfo.getImageIcon(&quot;/button/common/back_small_on.jpg&quot;)" type="code"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btBackActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btNext">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="SystemInfo.getImageIcon(&quot;/button/common/next_off.jpg&quot;)" type="code"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
+            <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="SystemInfo.getImageIcon(&quot;/button/common/next_on.jpg&quot;)" type="code"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btNextActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbShopCategory">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x696d;&#x614b;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbShopCategoryvalue">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="   "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbShopValue">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="    "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbDateValue">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="     "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btRegist">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_off.jpg&quot;)" type="code"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
+            <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_on.jpg&quot;)" type="code"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRegistActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="PanelPage1">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1000, 750]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="paneTable1" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="itemClassContractedNameLabel52" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="itemClassContractedNameLabel25" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="itemClassContractedNameLabel57" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="itemClassContractedNameLabel24" min="-2" max="-2" attributes="0"/>
+                                              <Component id="panetable3" min="-2" pref="185" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel16" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="itemClassContractedNameLabel51" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="itemClassContractedNameLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="paneTable4" alignment="0" min="-2" pref="343" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="itemClassContractedNameLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="itemClassContractedNameLabel2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="itemClassContractedNameLabel3" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="txttechnic" min="-2" pref="90" max="-2" attributes="1"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txtaverage" min="-2" pref="93" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel7" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="itemClassContractedNameLabel9" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="itemClassContractedNameLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="itemClassContractedNameLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="itemClassContractedNameLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="itemClassContractedNameLabel22" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="txtSaleTarget" min="-2" pref="90" max="-2" attributes="1"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel17" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel18" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txtaverage1" min="-2" pref="93" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel20" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="itemClassContractedNameLabel21" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="itemClassContractedNameLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="itemClassContractedNameLabel15" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="paneTable2" alignment="0" pref="0" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="itemClassContractedNameLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="itemClassContractedNameLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="itemClassContractedNameLabel53" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="panetable4" alignment="0" min="-2" pref="835" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="paneTable5" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="itemClassContractedNameLabel28" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="32767" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel54" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel70" min="-2" pref="200" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="488" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel71" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txttechnic" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="txtaverage" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable1" min="-2" pref="100" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel52" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel12" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtSaleTarget" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="txtaverage1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel13" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable2" min="-2" pref="100" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel53" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel70" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel71" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="panetable4" min="-2" pref="60" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel23" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="itemClassContractedNameLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="itemClassContractedNameLabel26" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="panetable3" pref="60" max="32767" attributes="0"/>
+                      <Component id="paneTable4" pref="60" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel51" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel57" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel28" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel54" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable5" min="-2" pref="40" max="-2" attributes="0"/>
+                  <EmptySpace pref="129" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x6280;&#x8853;&#x58f2;&#x4e0a;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x6280;&#x8853;&#x58f2;&#x4e0a;&#x76ee;&#x6a19;&#x3092;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5186;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x21d2;&#x6708;&#x5e73;&#x5747;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel11">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x6280;&#x58f2;&#x76ee;&#x5b89;&#x3092;&#x53c2;&#x8003;&#x306b;&#x6280;&#x58f2;&#x6708;&#x76ee;&#x6a19;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel10">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x6708;&#x683c;&#x5dee;&#x3092;&#x53c2;&#x8003;&#x306b;&#x3057;&#x3066;&#x6bce;&#x6708;&#x3092;&#x5272;&#x308a;&#x632f;&#x308b;&#x3068;&#x4e0b;&#x8a18;&#x306e;&#x3088;&#x3046;&#x306b;&#x306a;&#x308a;&#x307e;&#x3059;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2460;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel9">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2461;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable1">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_1">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;1&#x6708;&quot;, &quot;2&#x6708;&quot;, &quot;3&#x6708;&quot;, &quot;4&#x6708;&quot;, &quot;5&#x6708;&quot;, &quot;6&#x6708;&quot;, &quot;7&#x6708;&quot;, &quot;8&#x6708;&quot;, &quot;9&#x6708;&quot;, &quot;10&#x6708;&quot;, &quot;11&#x6708;&quot;, &quot;12&#x6708;&quot;, &quot;&#x5e74;&#x9593;&quot;, &quot;&#x5dee;&#x984d;&quot;&#xa;    }) {&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            switch(rowIndex)&#xa;            {&#xa;                case 3:&#xa;                if(0 &lt; columnIndex &amp;&amp; columnIndex &lt; 13 )&#xa;                {&#xa;                    return true;&#xa;                }&#xa;                break;&#xa;                default:&#xa;                break;&#xa;            }&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_1FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_1FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_1PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.geobeck.swing.JTableEx()"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_1.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_1, SystemInfo.getTableHeaderRenderer());&#xa;table_1.setRowHeight(20);&#xa;&#xa;TableColumnModel tableModel = table_1.getColumnModel();&#xa;//tableModel.getColumn(0).setCellRenderer(new EditabeTableCellRenderer(String.class, &quot;0&quot;, 1));&#xa;tableModel.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(3).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(4).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(5).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(6).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(7).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(8).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(9).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(10).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(11).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(12).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel.getColumn(14).setCellRenderer(new MinusCellRedRenderer());&#xa;&#xa;//SelectTableCellRenderer.setSelectTableCellRenderer(table_1);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel52">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x5dee;&#x984d;&#x6b04;&#x304c;0&#x5186;&#x4ee5;&#x4e0a;&#x306b;&#x306a;&#x308c;&#x3070;OK&#x3067;&#x3059;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5186;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel12">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5e97;&#x8ca9;&#x58f2;&#x4e0a;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel21">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5e97;&#x8ca9;&#x58f2;&#x4e0a;&#x76ee;&#x6a19;&#x3092;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel22">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2460;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel17">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5186;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel18">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x21d2;&#x6708;&#x5e73;&#x5747;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel20">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5186;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel14">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x6708;&#x683c;&#x5dee;&#x3092;&#x53c2;&#x8003;&#x306b;&#x3057;&#x3066;&#x6bce;&#x6708;&#x3092;&#x5272;&#x308a;&#x632f;&#x308b;&#x3068;&#x4e0b;&#x8a18;&#x306e;&#x3088;&#x3046;&#x306b;&#x306a;&#x308a;&#x307e;&#x3059;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel13">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5e97;&#x8ca9;&#x76ee;&#x5b89;&#x3092;&#x53c2;&#x8003;&#x306b;&#x6280;&#x58f2;&#x6708;&#x76ee;&#x6a19;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel15">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2461;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable4">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_4">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;&#x6280;&#x8853;&#x5ba2;&#x5358;&#x4fa1;&quot;, &quot;&#x5973;&#x6027;&#x5358;&#x4fa1;&quot;, &quot;&#x7537;&#x6027;&#x5358;&#x4fa1;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;        };&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            switch(rowIndex)&#xa;            {&#xa;                case 1:&#xa;                if( 1&lt; columnIndex &amp;&amp; columnIndex &lt; 4 )&#xa;                {&#xa;                    return true;&#xa;                }&#xa;                default:&#xa;                break;&#xa;            }&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_4FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_4FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_4PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_4.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_4, SystemInfo.getTableHeaderRenderer());&#xa;table_4.setRowHeight(20);&#xa;//SelectTableCellRenderer.setSelectTableCellRenderer(table_4);&#xa;&#xa;TableColumnModel tableModel4 = table_4.getColumnModel();&#xa;//tableModel4.getColumn(1).setCellEditor(new IntegerCellEditor(new JTextField()));&#xa;tableModel4.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel4.getColumn(3).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel53">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x5dee;&#x984d;&#x6b04;&#x304c;0&#x5186;&#x4ee5;&#x4e0a;&#x306b;&#x306a;&#x308c;&#x3070;OK&#x3067;&#x3059;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable2">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_2">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;1&#x6708;&quot;, &quot;2&#x6708;&quot;, &quot;3&#x6708;&quot;, &quot;4&#x6708;&quot;, &quot;5&#x6708;&quot;, &quot;6&#x6708;&quot;, &quot;7&#x6708;&quot;, &quot;8&#x6708;&quot;, &quot;9&#x6708;&quot;, &quot;10&#x6708;&quot;, &quot;11&#x6708;&quot;, &quot;12&#x6708;&quot;, &quot;&#x5e74;&#x9593;&quot;, &quot;&#x5dee;&#x984d;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class};&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false, false, false, false, false, false, false, false, false, false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            switch(rowIndex)&#xa;            {&#xa;                case 3:&#xa;                if(0 &lt; columnIndex &amp;&amp; columnIndex &lt; 13 )&#xa;                {&#xa;                    return true;&#xa;                }&#xa;                break;&#xa;                default:&#xa;                break;&#xa;            }&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_2FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_2FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_2PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_2.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_2, SystemInfo.getTableHeaderRenderer());&#xa;table_2.setRowHeight(20);&#xa;&#xa;TableColumnModel tableModel2 = table_2.getColumnModel();&#xa;tableModel2.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(3).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(4).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(5).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(6).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(7).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(8).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(9).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(10).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(11).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(12).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel2.getColumn(14).setCellRenderer(new MinusCellRedRenderer());"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel23">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x6280;&#x8853;&#x5ba2;&#x5358;&#x4fa1;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel24">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5927;&#x307e;&#x304b;&#x306a;&#x5973;&#x6027;&#x5ba2;&#x6570;&#x6bd4;&#x7387;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel26">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5927;&#x307e;&#x304b;&#x306a;&#x6280;&#x8853;&#x5ba2;&#x5358;&#x4fa1;&#x76ee;&#x6a19;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="panetable3">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_3">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;&#x5973;&#x6027;&#x5ba2;&#x6570;&#x6bd4;&#x7387;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class&#xa;        };&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            switch(rowIndex)&#xa;            {&#xa;                case 1:&#xa;                if( columnIndex == 1 )&#xa;                {&#xa;                    return true;&#xa;                }&#xa;                default:&#xa;                break;&#xa;            }&#xa;            return false;&#xa;        }&#xa;        public void setValueAt(Object value, int rowIndex, int columnIndex)&#xa;        {&#xa;            if (rowIndex == 1 &amp;&amp; columnIndex == 1)&#xa;            {&#xa;                //Object ob = (Object)value.toString().substring(0, 3);&#xa;                if(&quot;&quot;.equals(value.toString()))&#xa;                {&#xa;                    super.setValueAt(0, rowIndex, columnIndex);&#xa;                }&#xa;                else&#xa;                {&#xa;                    value = (Object)Integer.parseInt(value.toString());&#xa;                    super.setValueAt(value, rowIndex, columnIndex);&#xa;                }&#xa;            }&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_3FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_3FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_3PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_3.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_3, SystemInfo.getTableHeaderRenderer());&#xa;table_3.setRowHeight(20);&#xa;&#xa;TableColumnModel tableModel3 = table_3.getColumnModel();&#xa;tableModel3.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField(), 3, 2));&#xa;&#xa;//((PlainDocument)table_3.getCellEditor(1, 1)).setDocumentFilter(&#xa;//                            new CustomFilter(3, CustomFilter.NUMERIC));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel51">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6280;&#x8853;&#x5ba2;&#x5358;&#x4fa1;&#xff1d;&#xff08;&#x5973;&#x6027;&#x6bd4;&#x7387;&#xd7;&#x5973;&#x6027;&#x5358;&#x4fa1;&#xff09;&#xff0b;&#xff08;&#x7537;&#x6027;&#x6bd4;&#x7387;&#xd7;&#x7537;&#x6027;&#x5358;&#x4fa1;&#xff09;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel28">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x6280;&#x8853;&#x5ba2;&#x6570;&#x76ee;&#x6a19;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel54">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x5404;&#x6708;&#x306e;&#x6280;&#x58f2;&#x6708;&#x76ee;&#x6a19;&#xf7;&#x6280;&#x8853;&#x5ba2;&#x5358;&#x4fa1;&#x304b;&#x3089;&#x7b97;&#x51fa;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel25">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2460;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel16">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2461;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable5">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_5">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;1&#x6708;&quot;, &quot;2&#x6708;&quot;, &quot;3&#x6708;&quot;, &quot;4&#x6708;&quot;, &quot;5&#x6708;&quot;, &quot;6&#x6708;&quot;, &quot;7&#x6708;&quot;, &quot;8&#x6708;&quot;, &quot;9&#x6708;&quot;, &quot;10&#x6708;&quot;, &quot;11&#x6708;&quot;, &quot;12&#x6708;&quot;, &quot;&#x5e74;&#x9593;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class};&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false, false, false, false, false, false, false, false, false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_5FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_5FocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_5.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_5, SystemInfo.getTableHeaderRenderer());&#xa;table_5.setRowHeight(20);&#xa;//SelectTableCellRenderer.setSelectTableCellRenderer(table_5);&#xa;//TableColumnModel tableModel5 = table_5.getColumnModel();&#xa;//tableModel5.getColumn(0).setCellRenderer(new EditabeTableCellRenderer(String.class, &quot;0&quot;, 1));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txttechnic">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="8e" green="d2" red="ff" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+          <Events>
+            <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="txttechnicCaretUpdate"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txttechnic.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMBER));"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtaverage">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextFieldEx(SystemInfo.getDecimalFormatter());"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtSaleTarget">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="8e" green="d2" red="ff" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+          <Events>
+            <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="txtSaleTargetCaretUpdate"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtSaleTarget.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMBER));"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtaverage1">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextFieldEx(SystemInfo.getDecimalFormatter());"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel57">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="panetable4">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="tbTargetItem">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor" postCode="TableColumnModel tbTargetItemModel = tbTargetItem.getColumnModel();&#xa; tbTargetItemModel.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(3).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(4).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(5).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(6).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(7).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;   tbTargetItemModel.getColumn(8).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;   tbTargetItemModel.getColumn(9).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(10).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(11).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));&#xa;    tbTargetItemModel.getColumn(12).setCellEditor(new CustomCellEditor(new JTextField() , 9, 3));">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;1&#x6708;&quot;, &quot;2&#x6708;&quot;, &quot;3&#x6708;&quot;, &quot;4&#x6708;&quot;, &quot;5&#x6708;&quot;, &quot;6&#x6708;&quot;, &quot;7&#x6708;&quot;, &quot;8&#x6708;&quot;, &quot;9&#x6708;&quot;, &quot;10&#x6708;&quot;, &quot;11&#x6708;&quot;, &quot;12&#x6708;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class};&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false, false, false, false, false, false, false, false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;&#xa;            if( columnIndex &gt;= 1 )&#xa;            {&#xa;                return true;&#xa;            }&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="tbTargetItemFocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="tbTargetItemFocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="tbTargetItem.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(tbTargetItem, SystemInfo.getTableHeaderRenderer());&#xa;tbTargetItem.setRowHeight(20);&#xa;&#xa;//TableColumnModel tbTargetItemModel = tbTargetItem.getColumnModel();&#xa;//tbTargetItemModel.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField(), 3, 2));&#xa;//tbTargetItemModel.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField(), 9, 1));&#xa;// set data cell&#xa;//((PlainDocument)tbTargetItem.getCellEditor(0, 1)).setDocumentFilter(&#xa;//                            new CustomFilter(3, CustomFilter.NUMERIC));&#xa;//((PlainDocument)tbTargetItem.getCellEditor(1, 1)).setDocumentFilter(&#xa;//                            new CustomFilter(9, CustomFilter.NUMERIC));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel70">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5e97;&#x8ca9;&#x8cfc;&#x8cb7;&#x6bd4;&#x7387;&#x30fb;&#x5358;&#x4fa1;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e; &lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel71">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="PanelPage2">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1000, 750]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="paneTable9" min="-2" pref="240" max="-2" attributes="0"/>
+                          <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel65" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel45" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel59" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel46" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="492" pref="492" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel37" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel38" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="paneTable6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Component id="paneTable_7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="paneTable8" min="-2" pref="259" max="-2" attributes="0"/>
+                              <Component id="itemClassContractedNameLabel58" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                                  <Component id="itemClassContractedNameLabel61" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="itemClassContractedNameLabel63" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="63" pref="63" max="-2" attributes="0"/>
+                                  <Component id="itemClassContractedNameLabel62" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="381" max="-2" attributes="0"/>
+                                  <Component id="itemClassContractedNameLabel74" min="-2" pref="185" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="381" max="-2" attributes="0"/>
+                                  <Component id="tbKarte" min="-2" pref="327" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel40" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel41" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="paneTable10" min="-2" pref="963" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel72" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel73" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="paneTable11" min="-2" pref="963" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="paneTable11_sum" min="-2" pref="963" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel77" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel47" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="paneTable_12" min="-2" pref="642" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel66" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel45" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="itemClassContractedNameLabel59" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel46" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel37" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel38" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="paneTable6" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="paneTable_7" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="paneTable8" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel58" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="itemClassContractedNameLabel61" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="itemClassContractedNameLabel63" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="itemClassContractedNameLabel74" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="itemClassContractedNameLabel62" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="paneTable9" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel65" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="tbKarte" min="-2" pref="40" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="itemClassContractedNameLabel40" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel41" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                  <Component id="paneTable10" min="-2" pref="40" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel72" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel73" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                  <Component id="paneTable11" min="-2" pref="167" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable11_sum" min="-2" pref="42" max="-2" attributes="0"/>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel77" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel47" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Component id="paneTable_12" min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel66" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel45">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5404;&#x518d;&#x6765;&#x7387;&#x3001;&#x4e8b;&#x524d;&#x4e88;&#x7d04;&#x7387;&#x3001;&#x6b21;&#x56de;&#x4e88;&#x7d04;&#x7387;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel46">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x518d;&#x6765;&#x7387;&#x76ee;&#x6a19;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel59">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2460;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable8">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_8">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;&#x4e8b;&#x524d;&#x4e88;&#x7d04;&#x7387;&quot;, &quot;&#x6b21;&#x56de;&#x4e88;&#x7d04;&#x7387;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;        };&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            switch(rowIndex)&#xa;            {&#xa;                case 1:&#xa;                if(0 &lt; columnIndex &amp;&amp; columnIndex &lt; 3 )&#xa;                {&#xa;                    return true;&#xa;                }&#xa;                break;&#xa;                default:&#xa;                break;&#xa;            }&#xa;            return false;&#xa;        }&#xa;        public void setValueAt(Object value, int rowIndex, int columnIndex)&#xa;        {&#xa;            if (rowIndex == 1)&#xa;            {&#xa;                if(&quot;&quot;.equals(value.toString()))&#xa;                {&#xa;                    super.setValueAt(0, rowIndex, columnIndex);&#xa;                }&#xa;                else&#xa;                {&#xa;                    value = (Object)Integer.parseInt(value.toString());&#xa;                    super.setValueAt(value, rowIndex, columnIndex);&#xa;                }&#xa;            }&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_8FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_8FocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_8.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_8, SystemInfo.getTableHeaderRenderer());&#xa;table_8.setRowHeight(20);&#xa;TableColumnModel tableModel8 = table_8.getColumnModel();&#xa;tableModel8.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField(),3 , 2));&#xa;tableModel8.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField(),3 , 2));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel61">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x73fe;&#x72b6;&#x76ee;&#x5b89;&#x306f;&#x76f4;&#x8fd1;&#x306e;&#x518d;&#x6765;&#x7387;&#x3092;&#x81ea;&#x52d5;&#x7684;&#x306b;&#x8868;&#x793a;&#x3057;&#x307e;&#x3059;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel63">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x65b0;&#x898f;&#x6bd4;&#x7387;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel72">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6280;&#x8853;&#x5ba2;&#x6570;&#x76ee;&#x6a19;&#xd7;&#x65b0;&#x898f;&#x6bd4;&#x7387;&#x76ee;&#x6a19;&#x304b;&#x3089;&#x7b97;&#x51fa;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable10">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_10">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;1&#x6708;&quot;, &quot;2&#x6708;&quot;, &quot;3&#x6708;&quot;, &quot;4&#x6708;&quot;, &quot;5&#x6708;&quot;, &quot;6&#x6708;&quot;, &quot;7&#x6708;&quot;, &quot;8&#x6708;&quot;, &quot;9&#x6708;&quot;, &quot;10&#x6708;&quot;, &quot;11&#x6708;&quot;, &quot;12&#x6708;&quot;, &quot;&#x5e74;&#x9593;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class};&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false, false, false, false, false, false, false, false, false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return canEdit [columnIndex];&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_10FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_10FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_10PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_10.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_10, SystemInfo.getTableHeaderRenderer());&#xa;table_10.setRowHeight(20);&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(table_10);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel73">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5a92;&#x4f53;&#x5225;&#x65b0;&#x898f;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable9">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_9">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;&#x524d;&#x671f;&quot;, &quot;&#x76ee;&#x6a19;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class&#xa;        };&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            switch(rowIndex)&#xa;            {&#xa;                case 0:&#xa;                if(columnIndex == 2 )&#xa;                {&#xa;                    return true;&#xa;                }&#xa;                break;&#xa;                default:&#xa;                break;&#xa;            }&#xa;            return false;&#xa;        }&#xa;        &#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_9FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_9FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_9PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_9.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_9, SystemInfo.getTableHeaderRenderer());&#xa;table_9.setRowHeight(20);&#xa;TableColumnModel tableModel9 = table_9.getColumnModel();&#xa;tableModel9.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField(),3 , 2));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel77">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x30c7;&#x30b7;&#x30eb;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable6">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[300, 752]"/>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_6">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;        &quot;&#x73fe;&#x72b6;&#x76ee;&#x5b89;&quot;, &quot;90&#x65e5;&quot;, &quot;120&#x65e5;&quot;, &quot;180&#x65e5;&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        String.class,&#xa;        Integer.class,&#xa;        Integer.class,&#xa;        Integer.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false&#xa;    };&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;}" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_6FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_6FocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_6.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_6, SystemInfo.getTableHeaderRenderer());&#xa;table_6.setRowHeight(20);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="paneTable_7">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[300, 752]"/>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_7">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;        &quot;&#x76ee;&#x6a19;&quot;, &quot;90&#x65e5;&quot;, &quot;120&#x65e5;&quot;, &quot;180&#x65e5;&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        String.class,&#xa;        Integer.class,&#xa;        Integer.class,&#xa;        Integer.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, true, true, true&#xa;    };&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;    public void setValueAt(Object value, int rowIndex, int columnIndex)&#xa;    {&#xa;        if (0 &lt; columnIndex)&#xa;        {&#xa;            if(&quot;&quot;.equals(value.toString()))&#xa;            {&#xa;                super.setValueAt(0, rowIndex, columnIndex);&#xa;            }&#xa;            else&#xa;            {&#xa;                value = (Object)Integer.parseInt(value.toString());&#xa;                super.setValueAt(value, rowIndex, columnIndex);&#xa;            }&#xa;        }&#xa;    }&#xa;}" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_7.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_7, SystemInfo.getTableHeaderRenderer());&#xa;table_7.setRowHeight(20);&#xa;TableColumnModel tableModel7 = table_7.getColumnModel();&#xa;tableModel7.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField(),3 , 2));&#xa;tableModel7.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField(),3 , 2));&#xa;tableModel7.getColumn(3).setCellEditor(new CustomCellEditor(new JTextField(),3 , 2));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel38">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x4e8b;&#x524d;&#x4e88;&#x7d04;&#x7387;&#x3001;&#x6b21;&#x56de;&#x4e88;&#x7d04;&#x7387;&#x76ee;&#x6a19;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel37">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2461;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel41">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x6708;&#x5e73;&#x5747;&#x4eba;&#x6570;&#x306f;&#x5e74;&#x9593;&#x6280;&#x8853;&#x5ba2;&#x76ee;&#x6a19;&#xf7;12&#xd7;&#x65b0;&#x898f;&#x6bd4;&#x7387;&#x304b;&#x3089;&#x7b97;&#x51fa;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel40">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable_12">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_12">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&#x30c7;&#x30b7;&#x30eb;&quot;, &quot;&#x524d;&#x671f;&#x4eba;&#x6570;&quot;, &quot;&#x524d;&#x671f;&#x58f2;&#x4e0a;&#x9ad8;&quot;, &quot;&#x524d;&#x671f;&#x6bd4;&#x7387;&quot;, &quot;&#x76ee;&#x6a19;&#x6bd4;&#x7387;&quot;, &quot;&#x524d;&#x671f;&#x6765;&#x5e97;&#x56de;&#x6570;&quot;, &quot;&#x76ee;&#x6a19;&#x6765;&#x5e97;&#x56de;&#x6570;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class&#xa;        };&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false, true, false, true&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return canEdit [columnIndex];&#xa;        }&#xa;&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_12FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_12FocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_12.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_12, SystemInfo.getTableHeaderRenderer());&#xa;table_12.setRowHeight(20);&#xa;TableColumnModel tableModel12 = table_12.getColumnModel();&#xa;tableModel12.getColumn(4).setCellEditor(new CustomCellEditor(new JTextField(),3 , 2));&#xa;tableModel12.getColumn(6).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel47">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x30c7;&#x30b7;&#x30eb;&#x306e;&#x4e0a;&#x4f4d;&#xff11;&#xff0c;&#xff12;&#xff0c;&#xff13;&#x306e;&#x58f2;&#x4e0a;&#x9ad8;&#x76ee;&#x6a19;&#x53ca;&#x3073;1&#x4eba;&#x306e;&#x6765;&#x5e97;&#x56de;&#x6570;&#x76ee;&#x6a19;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable11">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_11">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;1&#x6708;&quot;, &quot;2&#x6708;&quot;, &quot;3&#x6708;&quot;, &quot;4&#x6708;&quot;, &quot;5&#x6708;&quot;, &quot;6&#x6708;&quot;, &quot;7&#x6708;&quot;, &quot;8&#x6708;&quot;, &quot;9&#x6708;&quot;, &quot;10&#x6708;&quot;, &quot;11&#x6708;&quot;, &quot;12&#x6708;&quot;, &quot;&#x5e74;&#x9593;&quot;,&quot;&#x81ea;&#x529b;&#x96c6;&#x5ba2;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Object.class};&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false, false, false, false, false, false, false, false, false, false, false,true&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            if( rowIndex &lt; countRow)&#xa;            {&#xa;                if( ( 0 &lt; columnIndex &amp;&amp; columnIndex &lt; 13) || columnIndex == 14 ) &#xa;                {&#xa;                    return true;&#xa;                }&#xa;            }&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_11FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_11FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_11PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_11.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_11, SystemInfo.getTableHeaderRenderer());&#xa;table_11.setRowHeight(20);&#xa;TableColumnModel tableModel11 = table_11.getColumnModel();&#xa;tableModel11.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(3).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(4).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(5).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(6).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(7).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(8).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(9).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(10).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(11).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableModel11.getColumn(12).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));"/>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="SettingDataTargetPanel_table_11"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel58">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel62">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel65">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel66">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable11_sum">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_11_sum">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;    }) {&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return Object.class;&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return false;&#xa;        }&#xa;&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_11_sumFocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_11_sumFocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_11_sum.setTableHeader(null);&#xa;table_11_sum.setRowHeight(20);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel74">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x7a3c;&#x52d5;&#x30ab;&#x30eb;&#x30c6;&#x679a;&#x6570;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="com.geobeck.swing.JTableEx" name="tbKarte">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f0" green="f0" red="f0" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            if ( columnIndex == 0 ) {&#xa;                return false;&#xa;            }&#xa;            return true;&#xa;        }&#xa;    }" type="code"/>
+            </Property>
+            <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1000, 750]"/>
+            </Property>
+            <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="8e" green="d2" red="ff" type="rgb"/>
+            </Property>
+            <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="tbKarte.setRowHeight(20);&#xa;DefaultTableModel tbKarteModel = ((DefaultTableModel) tbKarte.getModel());&#xa;tbKarteModel.setColumnCount(5);&#xa;TableColumnModel tableColModel = tbKarte.getColumnModel();&#xa;tableColModel.getColumn(1).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableColModel.getColumn(2).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableColModel.getColumn(3).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));&#xa;tableColModel.getColumn(4).setCellEditor(new CustomCellEditor(new JTextField() , 9, 1));"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="PanelPage3">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1000, 750]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="itemClassContractedNameLabel48" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="itemClassContractedNameLabel64" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="itemClassContractedNameLabel75" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="itemClassContractedNameLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="itemClassContractedNameLabel39" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="itemClassContractedNameLabel56" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="itemClassContractedNameLabel67" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="paneTable13" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="paneTable15" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel78" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="paneTable14" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                          <Component id="itemClassContractedNameLabel60" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="paneTable18_sum" alignment="1" pref="0" max="32767" attributes="0"/>
+                              <Component id="paneTable17" pref="0" max="32767" attributes="0"/>
+                              <Component id="paneTable18" alignment="0" pref="0" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="itemClassContractedNameLabel68" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                                          <Component id="itemClassContractedNameLabel69" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="itemClassContractedNameLabel50" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="itemClassContractedNameLabel55" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="paneTable16" alignment="0" min="-2" pref="292" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel48" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Component id="paneTable13" min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel67" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel64" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Component id="paneTable14" min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel43" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable15" min="-2" pref="60" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel75" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable16" min="-2" pref="44" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel50" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Component id="itemClassContractedNameLabel78" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable17" min="-2" pref="99" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel68" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel69" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemClassContractedNameLabel39" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemClassContractedNameLabel56" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable18" min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="paneTable18_sum" min="-2" pref="22" max="-2" attributes="0"/>
+                  <EmptySpace pref="140" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel48">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5404;&#x30e1;&#x30cb;&#x30e5;&#x30fc;&#x6bd4;&#x7387;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel64">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5404;&#x30e1;&#x30cb;&#x30e5;&#x30fc;&#x5358;&#x4fa1;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable15">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_15">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;    }) {&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="table_15.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);&#xa;&#xa;table_15.setInheritsPopupMenu(true);">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_15FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_15FocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_15.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_15, SystemInfo.getTableHeaderRenderer());&#xa;table_15.setRowHeight(20);&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(table_15);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel75">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x6280;&#x8853;&#x58f2;&#x4e0a;&#x76ee;&#x6a19;&#x3068;&#x898b;&#x8fbc;&#x307f;&#x306e;&#x5dee;&#x7570;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable14">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="Table_14">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;    }) {&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            if( rowIndex == 1)&#xa;            {&#xa;                if( 0 &lt; columnIndex &amp;&amp; columnIndex &lt;= countCol)&#xa;                {&#xa;                    return true;&#xa;                }&#xa;            }&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="Table_14.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);&#xa;&#xa;Table_14.setInheritsPopupMenu(true);">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="Table_14FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="Table_14FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="Table_14PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="Table_14.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(Table_14, SystemInfo.getTableHeaderRenderer());&#xa;Table_14.setRowHeight(20);&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(Table_14);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel78">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5546;&#x54c1;&#x5225;&#x6bd4;&#x7387;&#x76ee;&#x6a19;&#x8a2d;&#x5b9a;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable13">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[300, 752]"/>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_13">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;    }) {&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            if( rowIndex == 1)&#xa;            {&#xa;                if( 0 &lt; columnIndex &amp;&amp; columnIndex &lt;= countCol)&#xa;                {&#xa;                    return true;&#xa;                }&#xa;            }&#xa;            return false;&#xa;        }&#xa;        public void setValueAt(Object value, int rowIndex, int columnIndex)&#xa;        {&#xa;            if (0 &lt; columnIndex &amp;&amp; columnIndex &lt;= countCol)&#xa;            {&#xa;                if(&quot;&quot;.equals(value.toString()))&#xa;                {&#xa;                    super.setValueAt(0, rowIndex, columnIndex);&#xa;                }&#xa;                else&#xa;                {&#xa;                    value = (Object)Integer.parseInt(value.toString());&#xa;                    super.setValueAt(value, rowIndex, columnIndex);&#xa;                }&#xa;            }&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="table_13.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);&#xa;&#xa;table_13.setInheritsPopupMenu(true);">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_13FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_13FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_13PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_13.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_13, SystemInfo.getTableHeaderRenderer());&#xa;table_13.setRowHeight(20);&#xa;//TableColumnModel tableModel13 = table_13.getColumnModel();&#xa;//for( int i = 1;i &lt;= countCol;i ++)&#xa;//{&#xa; //   tableModel13.getColumn(i).setCellEditor(new CustomCellEditor(new JTextField(),3));&#xa;//}"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel43">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&#xff1c;&#x5404;&#x30e1;&#x30cb;&#x30e5;&#x30fc;&#x58f2;&#x4e0a;&#x9ad8;&#x898b;&#x8fbc;&#x307f;&#xff1e;&lt;/b&gt;&lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable17">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_17">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;    }) {&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            if( rowIndex == 2)&#xa;            {&#xa;                if( 0 &lt; columnIndex &amp;&amp; columnIndex &lt;= countCol1)&#xa;                {&#xa;                    return true;&#xa;                }&#xa;            }&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor" postCode="table_17.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);&#xa;&#xa;table_17.setInheritsPopupMenu(true);">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_17FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_17FocusLost"/>
+                <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="table_17PropertyChange"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_17.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_17, SystemInfo.getTableHeaderRenderer());&#xa;table_17.setRowHeight(20);&#xa;//TableColumnModel tableModel17 = table_17.getColumnModel();&#xa;//for( int i = 1;i &lt;= countCol1;i ++)&#xa;//{&#xa;//    tableModel17.getColumn(i).setCellEditor(new CustomCellEditor(new JTextField(),3));&#xa;//}"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel50">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x5dee;&#x7570;&#x304c;&#x30de;&#x30a4;&#x30ca;&#x30b9;&#x306b;&#x306a;&#x3063;&#x3066;&#x3044;&#x308b;&#x5834;&#x5408;&#x306f;&#x30e1;&#x30cb;&#x30e5;&#x30fc;&#x6bd4;&#x7387;&#x53ca;&#x3073;&#x30e1;&#x30cb;&#x30e5;&#x30fc;&#x5358;&#x4fa1;&#x76ee;&#x6a19;&#x306b;&#x3064;&#x3044;&#x3066;&#x898b;&#x76f4;&#x3057;&#x3092;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable16">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_16">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&#x76ee;&#x6a19;&quot;, &quot;&#x898b;&#x8fbc;&#x307f;&quot;, &quot;&#x5dee;&#x7570;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class&#xa;        };&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_16FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_16FocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_16.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_16, SystemInfo.getTableHeaderRenderer());&#xa;table_16.setRowHeight(20);&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(table_16);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="paneTable18">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_18">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&quot;, &quot;1&#x6708;&quot;, &quot;2&#x6708;&quot;, &quot;3&#x6708;&quot;, &quot;4&#x6708;&quot;, &quot;5&#x6708;&quot;, &quot;6&#x6708;&quot;, &quot;7&#x6708;&quot;, &quot;8&#x6708;&quot;, &quot;9&#x6708;&quot;, &quot;10&#x6708;&quot;, &quot;11&#x6708;&quot;, &quot;12&#x6708;&quot;, &quot;&#x5e74;&#x9593;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            String.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class,&#xa;            Integer.class};&#xa;        boolean[] canEdit = new boolean [] {&#xa;            false, false, false, false, false, false, false, false, false, false, false, false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_18FocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_18FocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_18.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(table_18, SystemInfo.getTableHeaderRenderer());&#xa;table_18.setRowHeight(20);&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(table_18);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel55">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x5206;&#x985e;&#x5225;&#x306b;&#x76ee;&#x6a19;&#x6bd4;&#x7387;&#x3092;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel56">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x76ee;&#x6a19;&#x6bd4;&#x7387;&#x306b;&#x5bfe;&#x3059;&#x308b;&#x6bce;&#x6708;&#x306e;&#x5e97;&#x8ca9;&#x58f2;&#x4e0a;&#x76ee;&#x6a19;&#x306f;&#x4e0b;&#x8a18;&#x306b;&#x306a;&#x308a;&#x307e;&#x3059;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel60">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2460;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel39">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x2461;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel67">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel68">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x6bd4;&#x7387;&#x306f;&#x6574;&#x6570;&#x3067;&#x5165;&#x529b;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="itemClassContractedNameLabel69">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x203b;&#x69cb;&#x6210;&#x6bd4;&#x7387;&#x306f;&#x5408;&#x8a08;&#x3067;100%&#x306b;&#x306a;&#x308b;&#x3088;&#x3046;&#x306b;&#x8a2d;&#x5b9a;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#x3002;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="paneTable18_sum">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                </LineBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="com.geobeck.swing.JTableEx" name="table_18_sum">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;    },&#xa;    new String [] {&#xa;    }) {&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return Object.class;&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return false;&#xa;        }&#xa;    }" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="2"/>
+                </Property>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1000, 750]"/>
+                </Property>
+                <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                </Property>
+                <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_18_sumFocusGained"/>
+                <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="table_18_sumFocusLost"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="table_18_sum.setTableHeader(null);&#xa;table_18_sum.setRowHeight(20);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

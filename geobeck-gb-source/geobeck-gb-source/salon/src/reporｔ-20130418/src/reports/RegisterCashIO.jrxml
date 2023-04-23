@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="RegisterCashIO"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Landscape"
+		 pageWidth="842"
+		 pageHeight="595"
+		 columnWidth="814"
+		 columnSpacing="0"
+		 leftMargin="14"
+		 rightMargin="14"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="TargetStartDate" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="TargetEndDate" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="TargetName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="OutType" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="StaffName" isForPrompting="false" class="java.lang.String"/>
+
+	<field name="ioTime" class="java.util.Date"/>
+	<field name="staffName" class="java.lang.String"/>
+	<field name="inValue" class="java.lang.Integer"/>
+	<field name="outValue" class="java.lang.Integer"/>
+	<field name="useFor" class="java.lang.String"/>
+
+	<variable name="sumInValue" class="java.lang.Integer" resetType="Report" calculation="Sum">
+		<variableExpression><![CDATA[$F{inValue}]]></variableExpression>
+	</variable>
+	<variable name="sumOutValue" class="java.lang.Integer" resetType="Report" calculation="Sum">
+		<variableExpression><![CDATA[$F{outValue}]]></variableExpression>
+	</variable>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="21"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="3"
+						y="2"
+						width="808"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="18" isBold="true" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[レジ入出金管理表]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="68"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="78"
+						y="19"
+						width="87"
+						height="14"
+						key="textField-30"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isUnderline="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{TargetStartDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="165"
+						y="19"
+						width="14"
+						height="14"
+						key="staticText-30"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[～]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="179"
+						y="19"
+						width="87"
+						height="14"
+						key="textField-31"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{TargetEndDate}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="78"
+						y="5"
+						width="247"
+						height="14"
+						key="textField-32"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{TargetName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="3"
+						y="19"
+						width="63"
+						height="14"
+						key="staticText-31"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[期間]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="66"
+						y="19"
+						width="12"
+						height="14"
+						key="staticText-32"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="66"
+						y="5"
+						width="12"
+						height="14"
+						key="staticText-33"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="5"
+						width="63"
+						height="14"
+						key="staticText-34"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[対象]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="3"
+						y="33"
+						width="63"
+						height="14"
+						key="staticText-35"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[出力タイプ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="66"
+						y="33"
+						width="12"
+						height="14"
+						key="staticText-36"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="78"
+						y="33"
+						width="247"
+						height="14"
+						key="textField-40"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{OutType}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="3"
+						y="47"
+						width="63"
+						height="14"
+						key="staticText-37"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[担当]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="66"
+						y="47"
+						width="12"
+						height="14"
+						key="staticText-38"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="78"
+						y="47"
+						width="247"
+						height="14"
+						key="textField-41"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="11" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{StaffName}]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="16"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="1"
+						y="0"
+						width="105"
+						height="16"
+						forecolor="#000000"
+						backcolor="#CCCCCC"
+						key="staticText-39"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[日付]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="106"
+						y="0"
+						width="180"
+						height="16"
+						forecolor="#000000"
+						backcolor="#CCCCCC"
+						key="staticText-40"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[スタッフ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="286"
+						y="0"
+						width="105"
+						height="16"
+						forecolor="#000000"
+						backcolor="#CCCCCC"
+						key="staticText-41"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[入金]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="391"
+						y="0"
+						width="105"
+						height="16"
+						forecolor="#000000"
+						backcolor="#CCCCCC"
+						key="staticText-42"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[出金]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="496"
+						y="0"
+						width="210"
+						height="16"
+						forecolor="#000000"
+						backcolor="#CCCCCC"
+						key="staticText-43"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[用途]]></text>
+				</staticText>
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="16"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" pattern="yyyy/MM/dd" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="1"
+						y="0"
+						width="105"
+						height="16"
+						key="textField-4"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$F{ioTime}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="286"
+						y="0"
+						width="105"
+						height="16"
+						key="textField-6"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{inValue}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="106"
+						y="0"
+						width="180"
+						height="16"
+						key="textField-7"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{staffName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="391"
+						y="0"
+						width="106"
+						height="16"
+						key="textField-8"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{outValue}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="496"
+						y="0"
+						width="210"
+						height="16"
+						key="textField-11"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{useFor}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="8"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="10"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="10"  isSplitAllowed="true" >
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="16"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="1"
+						y="0"
+						width="285"
+						height="16"
+						forecolor="#000000"
+						backcolor="#CCCCCC"
+						key="staticText-29"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="10" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[合計]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="286"
+						y="0"
+						width="105"
+						height="16"
+						key="textField-21"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$V{sumInValue}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="391"
+						y="0"
+						width="105"
+						height="16"
+						key="textField-23"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$V{sumOutValue}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="496"
+						y="0"
+						width="210"
+						height="16"
+						key="textField-42"
+						positionType="Float"/>
+					<box topBorder="Thin" topBorderColor="#000000" leftBorder="Thin" leftBorderColor="#000000" rightBorder="Thin" rightBorderColor="#000000" rightPadding="2" bottomBorder="Thin" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isBold="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[]]></textFieldExpression>
+				</textField>
+			</band>
+		</summary>
+</jasperReport>

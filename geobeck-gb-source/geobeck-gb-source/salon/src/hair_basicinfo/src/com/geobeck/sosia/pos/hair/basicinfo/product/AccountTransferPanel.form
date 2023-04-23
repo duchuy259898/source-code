@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="DivisionGroup1">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="DepositTypeGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="DivisionGroup2">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="ProcessingGroup">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="focusCycleRoot" type="boolean" value="true"/>
+    <Property name="focusTraversalPolicy" type="java.awt.FocusTraversalPolicy" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection component="&#x30d5;&#x30a9;&#x30fc;&#x30e0;" name="focusTraversalPolicy" type="property"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPaneRoot" pref="810" max="32767" attributes="1"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jTabbedPaneRoot" pref="672" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPaneRoot">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[626, 459]"/>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="&#x3000;&#x53e3;&#x5ea7;&#x60c5;&#x5831;&#x767b;&#x9332;&#x3000;"/>
+      </AccessibilityProperties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panelRegistAccount">
+          <Properties>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x3000;&#x53e3;&#x5ea7;&#x60c5;&#x5831;&#x767b;&#x9332;&#x3000;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x3000;&#x53e3;&#x5ea7;&#x60c5;&#x5831;&#x767b;&#x9332;&#x3000;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="panelScrollAccounts" max="32767" attributes="0"/>
+                          <Component id="panelFormAccount" pref="805" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                      <Component id="panelFormAccount" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="panelScrollAccounts" min="-2" pref="385" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="panelScrollAccounts">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MoveStockPanel_paneDetail1"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="com.geobeck.swing.JTableEx" name="panelAccounts">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {},&#xa;    new String [] {&#xa;        &quot;&#x9867;&#x5ba2;&#x60c5;&#x5831;&quot;, &quot;&#x9867;&#x5ba2;No&quot;, &quot;&#x9867;&#x5ba2;&#x540d;&quot;, &quot;&#x9280;&#x884c;&#x30b3;&#x30fc;&#x30c9;&quot;, &quot;&#x9280;&#x884c;&#x540d;&quot;, &quot;&#x652f;&#x5e97;&#x30b3;&#x30fc;&#x30c9;&quot;, &quot;&#x652f;&#x5e97;&#x540d;&quot;, &quot;&#x9810;&#x91d1;&#x7a2e;&#x5225;&quot;, &quot;&#x53e3;&#x5ea7;&#x756a;&#x53f7;&quot;, &quot;&#x53e3;&#x5ea7;&#x540d;&#x7fa9;&quot;&#xa;    }) {&#xa;        Class[] types = new Class [] {&#xa;            Object.class,&#xa;            String.class,&#xa;            String.class,&#xa;            String.class,&#xa;            String.class,&#xa;            String.class,&#xa;            String.class,&#xa;            String.class,&#xa;            String.class,&#xa;            String.class};&#xa;        boolean[] canEdit = new boolean [] {&#xa;            true, false, false, false, false, false, false, false, false, false&#xa;        };&#xa;        public Class getColumnClass(int columnIndex) {&#xa;            return types [columnIndex];&#xa;        }&#xa;        public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;            return canEdit [columnIndex];&#xa;        }&#xa;    }" type="code"/>
+                    </Property>
+                    <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelAccountsMouseReleased"/>
+                    <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="panelAccountsKeyReleased"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="panelAccounts.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(panelAccounts, SystemInfo.getTableHeaderRenderer());&#xa;panelAccounts.setRowHeight(SystemInfo.TABLE_ROW_HEIGHT);&#xa;initTableAccountsInfoColumnWidth();&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(panelAccounts);"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelFormAccount">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="customerNoLabel" min="-2" pref="76" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="customerNo" min="-2" pref="91" max="-2" attributes="0"/>
+                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                  <Component id="searchCustomerButton" min="-2" pref="92" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="lbAccountCustomerNo" pref="76" max="32767" attributes="0"/>
+                                      <Component id="customerNameLable" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="lbBankCode" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="lbBankName" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="lbBranchCode" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="lbBranchName" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="txtBankCode" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="txtBranchCode" min="-2" pref="50" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="lbBranchCodeMemo" min="-2" pref="196" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="lbAccountNumber" min="-2" pref="64" max="-2" attributes="0"/>
+                                                      <Component id="lbDepositType" min="-2" pref="64" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="rdoDepositNormal" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                                          <Component id="rdoDepositInterim" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="txtAccountNumber" min="-2" pref="60" max="-2" attributes="0"/>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Component id="lbAccountNumberMemo" min="-2" pref="196" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="lbAccountHolder" min="-2" pref="64" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="txtAccountName" min="-2" pref="141" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="lbAccountHolderMemo" min="-2" pref="249" max="-2" attributes="0"/>
+                                                      <Group type="102" attributes="0">
+                                                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                                          <Component id="lbAccountHolderMemo1" max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Component id="txtBranchName" min="-2" pref="189" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="txtAccountCustomerNo" alignment="0" pref="0" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="customerName1" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="btBankSearch" min="-2" pref="92" max="-2" attributes="0"/>
+                                                      <Component id="customerName2" min="-2" pref="92" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Component id="txtBankName" alignment="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="lbAccountCustomerNoNotes" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="btClear" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="addButton" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="renewButton" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="deleteButton" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="customerNo" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="searchCustomerButton" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Component id="customerNoLabel" min="-2" pref="22" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="customerNameLable" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="customerName1" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="customerName2" min="-2" pref="24" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbAccountCustomerNo" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="txtAccountCustomerNo" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="lbAccountCustomerNoNotes" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="txtBankCode" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="lbBankCode" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="btBankSearch" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtBankName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbBankName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAccountNumber" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbAccountNumber" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbAccountNumberMemo" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtBranchCode" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbBranchCode" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="txtAccountName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbAccountHolder" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbBranchCodeMemo" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbAccountHolderMemo" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="txtBranchName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Component id="lbBranchName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lbAccountHolderMemo1" min="-2" pref="25" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="deleteButton" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <Component id="renewButton" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <Component id="addButton" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                              <Component id="btClear" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lbDepositType" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="rdoDepositNormal" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="rdoDepositInterim" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="customerNoLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x9867;&#x5ba2;No."/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="customerNo">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="15"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="MS UI Gothic" size="14" style="0"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="customerNoFocusLost"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)customerNo.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(15, CustomFilter.ALPHAMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="customerName2">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="MS UI Gothic" size="14" style="0"/>
+                    </Property>
+                    <Property name="inputKanji" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="customerName1">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="MS UI Gothic" size="14" style="0"/>
+                    </Property>
+                    <Property name="inputKanji" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rdoDepositNormal">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="DepositTypeGroup"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="&#x666e;&#x901a;"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                        <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+                      </Border>
+                    </Property>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                      <Insets value="[0, 0, 0, 0]"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="customerNameLable">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x9867;&#x5ba2;&#x540d;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rdoDepositInterim">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="DepositTypeGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&#x5f53;&#x5ea7;"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                        <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+                      </Border>
+                    </Property>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                      <Insets value="[0, 0, 0, 0]"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rdoDepositInterimActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="searchCustomerButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/search/search_customer_off.jpg&quot;)" type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/search/search_customer_on.jpg&quot;)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchCustomerButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbDepositType">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x9810;&#x91d1;&#x7a2e;&#x5225;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtBankCode">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtBankCode.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(4, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JButton" name="renewButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_off.jpg&quot;)" type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_on.jpg&quot;)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="renewButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="deleteButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/delete_off.jpg&quot;)" type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/delete_on.jpg&quot;)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="addButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/insert_off.jpg&quot;)" type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/insert_on.jpg&quot;)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="btBankSearch">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/search/code_search_off.jpg&quot;)" type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/search/code_search_on.jpg&quot;)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btBankSearchActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtBankName">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="inputKanji" type="boolean" value="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtBankName.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(15));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbBankCode">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x9280;&#x884c;&#x30b3;&#x30fc;&#x30c9;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbBankName">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x9280;&#x884c;&#x540d;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbBranchCode">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x652f;&#x5e97;&#x30b3;&#x30fc;&#x30c9;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtBranchCode">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtBranchCode.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(3, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtBranchName">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="inputKanji" type="boolean" value="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtBranchName.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(15));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbBranchName">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x652f;&#x5e97;&#x540d;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbAccountNumber">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x53e3;&#x5ea7;&#x756a;&#x53f7;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtAccountNumber">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtAccountNumber.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(7, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbAccountHolder">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x53e3;&#x5ea7;&#x540d;&#x7fa9;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtAccountName">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtAccountName.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomAccountFilter(30));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbBranchCodeMemo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;&#x90f5;&#x4fbf;&#x5c40;&#x306e;&#x5834;&#x5408;&#x306f;&#x3001;&#x901a;&#x5e33;&#x8a18;&#x53f7;&#x306e;&#x4e2d;3&#x6841;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbAccountNumberMemo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;&#x90f5;&#x4fbf;&#x5c40;&#x306e;&#x5834;&#x5408;&#x306f;&#x3001;&#x901a;&#x5e33;&#x756a;&#x53f7;&#x306e;&#x4e0a;7&#x6841;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbAccountHolderMemo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;30&#x6587;&#x5b57;&#xff08;&#x534a;&#x89d2;&#x30ab;&#x30ca;&#x5927;&#x6587;&#x5b57;&#x3001;&#x534a;&#x89d2;&#x82f1;&#x6570;&#x5927;&#x6587;&#x5b57;&#xff09;&#x3001;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btClear">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/clear_off.jpg&quot;)" type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/clear_on.jpg&quot;)" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btClearActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbAccountHolderMemo1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x30ab;&#x30ca;&#x5c0f;&#x6587;&#x5b57;&#x306f;&#x4e0d;&#x53ef;"/>
+                    <Property name="verticalAlignment" type="int" value="1"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtAccountCustomerNo">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="MS UI Gothic" size="14" style="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="((PlainDocument)txtAccountCustomerNo.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(14, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbAccountCustomerNo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x632f;&#x66ff;&#x7528;&#x9867;&#x5ba2;No"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbAccountCustomerNoNotes">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;&#x6570;&#x5b57;&#x306e;&#x307f;14&#x6841;&#x307e;&#x3067;&#xff08;&#x53e3;&#x5ea7;&#x632f;&#x66ff;&#x4f9d;&#x983c;&#x66f8;&#x8a18;&#x8f09;&#x306e;&#x9867;&#x5ba2;No&#x3092;&#x767b;&#x9332;&#x3057;&#x3066;&#x304f;&#x3060;&#x3055;&#x3044;&#xff09;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelBilling">
+          <Properties>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x3000;&#x8acb;&#x6c42;&#x30fb;&#x7d50;&#x679c;&#x3000;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x3000;&#x8acb;&#x6c42;&#x30fb;&#x7d50;&#x679c;&#x3000;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="panelScrollBillingResult" max="32767" attributes="0"/>
+                          <Component id="panelDetailBilling" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="panelDetailBilling" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <Component id="panelScrollBillingResult" pref="480" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="panelScrollBillingResult">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder>
+                      <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                    </LineBorder>
+                  </Border>
+                </Property>
+                <Property name="autoscrolls" type="boolean" value="true"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="com.geobeck.swing.JTableEx" name="panelBillingResult">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="12" rowCount="0">
+                        <Column editable="false" title="&#x9867;&#x5ba2;No" type="java.lang.String"/>
+                        <Column editable="false" title="&#x9867;&#x5ba2;&#x540d;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x9280;&#x884c;&#x30b3;&#x30fc;&#x30c9;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x9280;&#x884c;&#x540d;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x652f;&#x5e97;&#x30b3;&#x30fc;&#x30c9;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x652f;&#x5e97;&#x540d;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x9810;&#x91d1;&#x7a2e;&#x5225;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x53e3;&#x5ea7;&#x756a;&#x53f7;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x53e3;&#x5ea7;&#x540d;&#x7fa9;" type="java.lang.String"/>
+                        <Column editable="false" title="&#x8acb;&#x6c42;&#x91d1;&#x984d;" type="java.lang.Integer"/>
+                        <Column editable="false" title="&#x632f;&#x66ff;&#x7d50;&#x679c;" type="java.lang.String"/>
+                        <Column editable="true" title="" type="java.lang.Boolean"/>
+                      </Table>
+                    </Property>
+                    <Property name="autoResizeMode" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="javax.swing.JTable.AUTO_RESIZE_OFF" type="code"/>
+                    </Property>
+                    <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="8e" green="d2" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="selectionForeground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="panelBillingResult.getTableHeader().setReorderingAllowed(false);&#xa;SwingUtil.setJTableHeaderRenderer(panelBillingResult, SystemInfo.getTableHeaderRenderer());&#xa;panelBillingResult.getColumnModel().getColumn(this.COL_CHECK).setHeaderRenderer(this.getTableHeaderRenderer(panelBillingResult.getTableHeader()));&#xa;panelBillingResult.setRowHeight(SystemInfo.TABLE_ROW_HEIGHT);&#xa;initTableBillingResultColumnWidth();&#xa;SelectTableCellRenderer.setSelectTableCellRenderer(panelBillingResult);"/>
+                    <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="MoveStockPanel_tblDetail2"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelDetailBilling">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="lbTotalbilledAmount" min="-2" pref="74" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txtTotalbilledAmount" min="-2" pref="92" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="lbTotalbilledAmountMemo" min="-2" pref="20" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="btRegist" min="-2" pref="92" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lbProcessing" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="rdoProcessingBilling" min="-2" pref="103" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="rdoProcessingResult" min="-2" pref="101" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="lbTotalNumberOfBills" min="-2" pref="74" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="txtTotalNumberOfBills" min="-2" pref="50" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="lbTotalNumberOfBillsMemo" min="-2" pref="20" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="lbTargetMonth" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btExcelOutput" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btBillingDataOutput" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="lbTransferDate" pref="67" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="cmbYear" min="-2" pref="65" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="yeaLabel" min="-2" pref="20" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="cmbMonth" min="-2" pref="44" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="cmbDateTargetMonth" min="-2" pref="137" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="monthLable" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtTrasferDay" min="-2" pref="36" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="dayLable" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="btInvoiceList" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="158" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btResultData" min="-2" pref="92" max="-2" attributes="0"/>
+                              <Component id="btFileSelection" min="-2" pref="92" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbCollectionDate" min="-2" pref="53" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="dateCollectionDate" min="-2" pref="103" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="txtCSVPath" min="-2" pref="223" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rdoProcessingBilling" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="lbProcessing" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="rdoProcessingResult" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lbTargetMonth" alignment="3" min="-2" pref="24" max="-2" attributes="1"/>
+                                      <Component id="cmbDateTargetMonth" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtCSVPath" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbTransferDate" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="yeaLabel" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                              <Component id="cmbYear" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="monthLable" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                              <Component id="txtTrasferDay" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                              <Component id="dayLable" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Component id="cmbMonth" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="btInvoiceList" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="btFileSelection" min="-2" pref="25" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtTotalNumberOfBills" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbTotalNumberOfBills" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lbTotalNumberOfBillsMemo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                      <Component id="lbCollectionDate" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="btRegist" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="btBillingDataOutput" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="btResultData" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="btExcelOutput" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="txtTotalbilledAmount" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="lbTotalbilledAmount" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                          <Component id="lbTotalbilledAmountMemo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Component id="dateCollectionDate" min="-2" pref="22" max="-2" attributes="1"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="btFileSelection">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/select/file_select_off.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/select/file_select_on.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btFileSelectionActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rdoProcessingBilling">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="ProcessingGroup"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="text" type="java.lang.String" value="&#x8acb;&#x6c42;&#x30c7;&#x30fc;&#x30bf;&#x51fa;&#x529b;"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                        <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+                      </Border>
+                    </Property>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                      <Insets value="[0, 0, 0, 0]"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="rdoProcessingBillingItemStateChanged"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rdoProcessingResult">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="ProcessingGroup"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&#x632f;&#x66ff;&#x7d50;&#x679c;&#x53d6;&#x8fbc;"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                        <EmptyBorder bottom="0" left="0" right="0" top="0"/>
+                      </Border>
+                    </Property>
+                    <Property name="contentAreaFilled" type="boolean" value="false"/>
+                    <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                      <Insets value="[0, 0, 0, 0]"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="rdoProcessingResultItemStateChanged"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="btInvoiceList">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/custom/claim_target_list_off.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/custom/claim_target_list_on.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btInvoiceListActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbProcessing">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x51e6;&#x7406;&#x533a;&#x5206;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbTargetMonth">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x5bfe;&#x8c61;&#x6708;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="yeaLabel">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="&#x5e74;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="monthLable">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="&#x6708;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbMonth">
+                  <Properties>
+                    <Property name="maximumRowCount" type="int" value="13"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbYear">
+                  <Properties>
+                    <Property name="maximumRowCount" type="int" value="12"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbTransferDate">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x53e3;&#x5ea7;&#x632f;&#x66ff;&#x65e5;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbTotalNumberOfBills">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x8acb;&#x6c42;&#x5408;&#x8a08;&#x4ef6;&#x6570;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtTotalNumberOfBills">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                      <Format subtype="1" type="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.geobeck.swing.JFormattedTextFieldEx(SystemInfo.getDecimalFormatter())"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="((PlainDocument)txtTotalNumberOfBills.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbTotalbilledAmount">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x8acb;&#x6c42;&#x5408;&#x8a08;&#x91d1;&#x984d;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtTotalbilledAmount">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
+                      <Format subtype="1" type="0"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.geobeck.swing.JFormattedTextFieldEx(SystemInfo.getDecimalFormatter())"/>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="((PlainDocument)txtTotalbilledAmount.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(9, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbTotalNumberOfBillsMemo">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="&#x4ef6;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbTotalbilledAmountMemo">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="&#x5186;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="btRegist">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_off.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_on.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRegistActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="btExcelOutput">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/print/excel_off.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/print/excel_on.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btExcelOutputActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="btBillingDataOutput">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/print/invoice_data_output_off.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/print/invoice_data_output_on.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btBillingDataOutputActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="btResultData">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/select/result_data_input_off.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/select/result_data_input_on.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btResultDataActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="jp.co.flatsoft.fscomponent.FSCalenderCombo" name="dateCollectionDate">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="date" type="java.util.Date" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new java.util.Date()" type="code"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbCollectionDate">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="&#x56de;&#x53ce;&#x65e5;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dayLable">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="&#x65e5;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtTrasferDay">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="horizontalAlignment" type="int" value="4"/>
+                    <Property name="inputKanji" type="boolean" value="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="((PlainDocument)txtTrasferDay.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(2, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbDateTargetMonth">
+                  <Properties>
+                    <Property name="maximumRowCount" type="int" value="12"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="0"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtCSVPath">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                    <Property name="inputKanji" type="boolean" value="true"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelRegisterCustomerInfo">
+          <Properties>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&#x3000;&#x59d4;&#x8a17;&#x8005;&#x60c5;&#x5831;&#x767b;&#x9332;&#x3000;">
+                <Property name="tabTitle" type="java.lang.String" value="&#x3000;&#x59d4;&#x8a17;&#x8005;&#x60c5;&#x5831;&#x767b;&#x9332;&#x3000;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="registerCustomerInfo" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="registerCustomerInfo" alignment="1" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="registerCustomerInfo">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbConsignorCode" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtConsignorCode" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="lbConsignorCodeMemo" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="btnRegistCustomer" min="-2" pref="92" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="lbClassification" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtDivision" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="lbClassificationMemo" min="-2" pref="37" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="lbTransferCusDate" pref="74" max="32767" attributes="0"/>
+                                      <Component id="paymentLabel" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="cmbTransferCusDate" min="-2" pref="65" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="TransferCusDateMemo" min="-2" pref="20" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="cmbPayment" min="-2" pref="159" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="paymentLableMemo" min="-2" pref="344" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lbConsignorName" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtConsignorName" min="-2" pref="160" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="lbConsignorNameMemo" min="-2" pref="383" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="170" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtConsignorCode" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="lbConsignorCode" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="lbConsignorCodeMemo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="btnRegistCustomer" min="-2" pref="25" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtDivision" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="lbClassification" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="lbClassificationMemo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtConsignorName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="lbConsignorName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="lbConsignorNameMemo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbTransferCusDate" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="TransferCusDateMemo" min="-2" pref="22" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="cmbTransferCusDate" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="paymentLabel" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="cmbPayment" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="paymentLableMemo" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="488" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="btnRegistCustomer">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_off.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                    <Property name="borderPainted" type="boolean" value="false"/>
+                    <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_on.jpg&quot;)&#xa;    " type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegistCustomerActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="TransferCusDateMemo">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="0"/>
+                    <Property name="text" type="java.lang.String" value="&#x65e5;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbTransferCusDate">
+                  <Properties>
+                    <Property name="maximumRowCount" type="int" value="12"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor" preCode="initComboboxTransferDate();">
+                      <StringArray count="0"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbTransferCusDate">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x632f;&#x66ff;&#x65e5;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbConsignorCode">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x59d4;&#x8a17;&#x8005;&#x30b3;&#x30fc;&#x30c9;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtConsignorCode">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtConsignorCode.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(6, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbConsignorCodeMemo">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;6&#x6841;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbClassificationMemo">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;2&#x6841;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbClassification">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x533a;&#x5206;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtDivision">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtDivision.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomFilter(2, CustomFilter.NUMERIC));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbConsignorNameMemo">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;40&#x6587;&#x5b57;&#xff08;&#x534a;&#x89d2;&#x30ab;&#x30ca;&#x5927;&#x6587;&#x5b57;&#x3001;&#x534a;&#x89d2;&#x82f1;&#x6570;&#x5927;&#x6587;&#x5b57;&#xff09;&#x3001;&#x30ab;&#x30ca;&#x5c0f;&#x6587;&#x5b57;&#x306f;&#x4e0d;&#x53ef;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lbConsignorName">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x59d4;&#x8a17;&#x8005;&#x540d;"/>
+                  </Properties>
+                </Component>
+                <Component class="com.geobeck.swing.JFormattedTextFieldEx" name="txtConsignorName">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="columns" type="int" value="30"/>
+                    <Property name="inputKanji" type="boolean" value="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtConsignorName.getDocument()).setDocumentFilter(&#xa;&#x9;&#x9;new CustomAccountFilter(30));"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cmbPayment">
+                  <Properties>
+                    <Property name="maximumRowCount" type="int" value="12"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder>
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JComboBox()"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="paymentLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="&#x652f;&#x6255;&#x65b9;&#x6cd5;"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="paymentLableMemo">
+                  <Properties>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="text" type="java.lang.String" value="&#xff0a;&#x7d50;&#x679c;&#x53d6;&#x8fbc;&#x6642;&#x306e;&#x58f2;&#x639b;&#x51e6;&#x7406;&#x306e;&#x6d88;&#x8fbc;&#x6642;&#x306e;&#x652f;&#x6255;&#x65b9;&#x6cd5;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

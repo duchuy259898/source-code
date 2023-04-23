@@ -1,0 +1,1305 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="focusCycleRoot" type="boolean" value="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="1">
+                      <Component id="shopLabel" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="shop1" min="-2" pref="223" max="-2" attributes="0"/>
+                      <EmptySpace pref="298" max="32767" attributes="0"/>
+                      <Component id="btnRegist" min="-2" pref="92" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblTax28" min="-2" pref="43" max="-2" attributes="0"/>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="count5From" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="65" pref="65" max="65" attributes="0"/>
+                                      <Component id="lblTax18" min="-2" pref="43" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                                      <Component id="conLabel1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="52" pref="52" max="52" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                                      <Component id="conLabel2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="65" pref="65" max="65" attributes="0"/>
+                                      <Component id="lblTax10" min="-2" pref="43" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="price5From" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblTax29" min="-2" pref="43" max="-2" attributes="0"/>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Component id="count4From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax30" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="count4To" min="-2" pref="60" max="-2" attributes="0"/>
+                              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                              <Component id="price4From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax12" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="price4To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblTax22" min="-2" pref="43" max="-2" attributes="0"/>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Component id="count1From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax25" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="count1To" min="-2" pref="60" max="-2" attributes="0"/>
+                              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                              <Component id="price1From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax15" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="price1To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblTax17" min="-2" pref="43" max="-2" attributes="0"/>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Component id="count3From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax27" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="count3To" min="-2" pref="60" max="-2" attributes="0"/>
+                              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                              <Component id="price3From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax14" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="price3To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblTax19" min="-2" pref="43" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                              <Component id="count2From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax20" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="count2To" min="-2" pref="60" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="price2From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax13" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="price2To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="icount5From" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="65" pref="65" max="65" attributes="0"/>
+                              <Component id="lblTax26" min="-2" pref="43" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                              <Component id="conLabel4" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="icount4From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax32" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="icount4To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="icount1From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax31" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="icount1To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="icount3From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax34" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="icount3To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="icount2From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax33" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="icount2To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                              <Component id="conLabel3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="65" pref="65" max="65" attributes="0"/>
+                              <Component id="lblTax11" min="-2" pref="43" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="aprice5From" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="aprice4From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax23" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="aprice4To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="aprice1From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax24" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="aprice1To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="aprice3From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax16" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Component id="aprice3To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="aprice2From" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="lblTax21" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                              <Component id="aprice2To" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                              <Component id="icount5From" min="-2" pref="23" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                              <Component id="lblTax26" min="-2" pref="23" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="conLabel4" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="icount4From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="lblTax32" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="icount4To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="icount3From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="lblTax34" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="icount3To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="icount2From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="lblTax33" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="icount2To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="icount1From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="lblTax31" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="icount1To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="shopLabel" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="shop1" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="btnRegist" min="-2" pref="25" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                                      <Component id="lblTax28" min="-2" pref="23" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                                      <Component id="count5From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                                      <Component id="lblTax18" min="-2" pref="23" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="conLabel1" min="-2" pref="22" max="-2" attributes="0"/>
+                                  <Component id="conLabel2" min="-2" pref="22" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                                      <Component id="lblTax10" min="-2" pref="23" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                                      <Component id="price5From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblTax29" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count4From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax30" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count4To" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price4From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax12" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price4To" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblTax17" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count3From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax27" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count3To" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price3From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax14" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price3To" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblTax19" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count2From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax20" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count2To" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price2From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax13" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price2To" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblTax22" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count1From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax25" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="count1To" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price1From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax15" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="price1To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="conLabel3" alignment="0" min="-2" pref="22" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                                      <Component id="lblTax11" min="-2" pref="23" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+                                      <Component id="aprice5From" min="-2" pref="23" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="aprice4From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax23" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="aprice4To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="aprice3From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax16" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="aprice3To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="aprice2From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax21" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="aprice2To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="aprice1From" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="lblTax24" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="aprice1To" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="shopLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5e97;&#x8217;"/>
+      </Properties>
+    </Component>
+    <Component class="com.geobeck.sosia.pos.swing.JComboBoxLabel" name="shop1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="shop1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="conLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x3010;&#x6765;&#x5e97;&#x56de;&#x6570;&#x3011;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax18">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x4ee5;&#x4e0a;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax28">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="MS UI Gothic" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x30e9;&#x30f3;&#x30af;&#xff15;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count2From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="count2FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)count2From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax19">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="MS UI Gothic" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x30e9;&#x30f3;&#x30af;&#xff12;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count5From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="count5FromActionPerformed"/>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="count5FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)count5From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax27">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax29">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="MS UI Gothic" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x30e9;&#x30f3;&#x30af;&#xff14;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count4To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax30">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax22">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="MS UI Gothic" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x30e9;&#x30f3;&#x30af;&#xff11;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count1From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)count1From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count4From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="count4FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)count4From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax25">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count1To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count3From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="count3FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)count3From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax17">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="MS UI Gothic" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x30e9;&#x30f3;&#x30af;&#xff13;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="conLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x3010;&#x58f2;&#x4e0a;&#x91d1;&#x984d;&#x3011;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price2From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="price2FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)price2From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price4To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x4ee5;&#x4e0a;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price1From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)price1From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price1To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price3From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="price3FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)price3From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price5From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="price5FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)price5From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price4From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="price4FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)price4From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count2To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="count3To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price2To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="price3To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnRegist">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/regist_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegistActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="ConditionSetPanel_setPeriodButton"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice4From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="aprice4FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)aprice4From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice3To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice2To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="conLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x3010;&#x5ba2;&#x5358;&#x4fa1;&#x3011;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice2From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="aprice2FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)aprice2From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice4To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x4ee5;&#x4e0a;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax23">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax24">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice1From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)aprice1From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice1To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice5From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="aprice5FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)aprice5From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="aprice3From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="aprice3FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)aprice3From.getDocument()).setDocumentFilter(new CustomFilter(8, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount2To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount3To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax26">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x4ee5;&#x4e0a;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="conLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x3010;&#x7d39;&#x4ecb;&#x5ba2;&#x6570;&#x3011;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount2From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="icount2FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)icount2From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax31">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount1From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)icount1From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount4From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="icount4FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)icount4From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax32">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount4To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax33">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTax34">
+      <Properties>
+        <Property name="text" type="java.lang.String" value=" &#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount3From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="icount3FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)icount3From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount1To">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+        <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="icount5From">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="&#xff2d;&#xff33; &#x30b4;&#x30b7;&#x30c3;&#x30af;" size="14" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder>
+              <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+            </LineBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="icount5FromActionPerformed"/>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="icount5FromFocusLost"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)icount5From.getDocument()).setDocumentFilter(new CustomFilter(4, CustomFilter.NUMERIC));"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

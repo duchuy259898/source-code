@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:ConnectIspotApi" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:ConnectIspotApi">
+<types>
+<xsd:schema targetNamespace="urn:ConnectIspotApi"
+>
+ <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+ <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+</xsd:schema>
+</types>
+<message name="registRequest">
+  <part name="method" type="xsd:string" />
+  <part name="inputJsonString" type="xsd:string" /></message>
+<message name="registResponse">
+  <part name="return" type="xsd:string" /></message>
+<message name="visitRequest">
+  <part name="inputJsonString" type="xsd:string" /></message>
+<message name="visitResponse">
+  <part name="return" type="xsd:string" /></message>
+<message name="cancelRequest">
+  <part name="inputJsonString" type="xsd:string" /></message>
+<message name="cancelResponse">
+  <part name="return" type="xsd:string" /></message>
+<message name="notifyRequest">
+  <part name="inputJsonString" type="xsd:string" /></message>
+<message name="notifyResponse">
+  <part name="return" type="xsd:string" /></message>
+<message name="commingInfomationRequest">
+  <part name="inputJsonString" type="xsd:string" /></message>
+<message name="commingInfomationResponse">
+  <part name="return" type="xsd:string" /></message>
+<message name="paymentPriceRequest">
+  <part name="inputJsonString" type="xsd:string" /></message>
+<message name="paymentPriceResponse">
+  <part name="return" type="xsd:string" /></message>
+<message name="stylistInfomationRequest">
+  <part name="inputJsonString" type="xsd:string" /></message>
+<message name="stylistInfomationResponse">
+  <part name="return" type="xsd:string" /></message>
+<portType name="ConnectIspotApiPortType">
+  <operation name="regist">
+    <documentation>regist</documentation>
+    <input message="tns:registRequest"/>
+    <output message="tns:registResponse"/>
+  </operation>
+  <operation name="visit">
+    <documentation>visit</documentation>
+    <input message="tns:visitRequest"/>
+    <output message="tns:visitResponse"/>
+  </operation>
+  <operation name="cancel">
+    <documentation>cancel</documentation>
+    <input message="tns:cancelRequest"/>
+    <output message="tns:cancelResponse"/>
+  </operation>
+  <operation name="notify">
+    <documentation>notify</documentation>
+    <input message="tns:notifyRequest"/>
+    <output message="tns:notifyResponse"/>
+  </operation>
+  <operation name="commingInfomation">
+    <documentation>commingInfomation</documentation>
+    <input message="tns:commingInfomationRequest"/>
+    <output message="tns:commingInfomationResponse"/>
+  </operation>
+  <operation name="paymentPrice">
+    <documentation>paymentPrice</documentation>
+    <input message="tns:paymentPriceRequest"/>
+    <output message="tns:paymentPriceResponse"/>
+  </operation>
+  <operation name="stylistInfomation">
+    <documentation>stylistInfomation</documentation>
+    <input message="tns:stylistInfomationRequest"/>
+    <output message="tns:stylistInfomationResponse"/>
+  </operation>
+</portType>
+<binding name="ConnectIspotApiBinding" type="tns:ConnectIspotApiPortType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="regist">
+    <soap:operation soapAction="urn:ConnectIspotApi#regist" style="rpc"/>
+    <input><soap:body use="literal" namespace="urn:ConnectIspotApi"/></input>
+    <output><soap:body use="literal" namespace="urn:ConnectIspotApi"/></output>
+  </operation>
+  <operation name="visit">
+    <soap:operation soapAction="urn:ConnectIspotApi#visit" style="rpc"/>
+    <input><soap:body use="literal" namespace="urn:ConnectIspotApi"/></input>
+    <output><soap:body use="literal" namespace="urn:ConnectIspotApi"/></output>
+  </operation>
+  <operation name="cancel">
+    <soap:operation soapAction="urn:ConnectIspotApi#cancel" style="rpc"/>
+    <input><soap:body use="literal" namespace="urn:ConnectIspotApi"/></input>
+    <output><soap:body use="literal" namespace="urn:ConnectIspotApi"/></output>
+  </operation>
+  <operation name="notify">
+    <soap:operation soapAction="urn:ConnectIspotApi#notify" style="rpc"/>
+    <input><soap:body use="literal" namespace="urn:ConnectIspotApi"/></input>
+    <output><soap:body use="literal" namespace="urn:ConnectIspotApi"/></output>
+  </operation>
+  <operation name="commingInfomation">
+    <soap:operation soapAction="urn:ConnectIspotApi#commingInfomation" style="rpc"/>
+    <input><soap:body use="literal" namespace="urn:ConnectIspotApi"/></input>
+    <output><soap:body use="literal" namespace="urn:ConnectIspotApi"/></output>
+  </operation>
+  <operation name="paymentPrice">
+    <soap:operation soapAction="urn:ConnectIspotApi#paymentPrice" style="rpc"/>
+    <input><soap:body use="literal" namespace="urn:ConnectIspotApi"/></input>
+    <output><soap:body use="literal" namespace="urn:ConnectIspotApi"/></output>
+  </operation>
+  <operation name="stylistInfomation">
+    <soap:operation soapAction="urn:ConnectIspotApi#stylistInfomation" style="rpc"/>
+    <input><soap:body use="literal" namespace="urn:ConnectIspotApi"/></input>
+    <output><soap:body use="literal" namespace="urn:ConnectIspotApi"/></output>
+  </operation>
+</binding>
+<service name="ConnectIspotApi">
+  <port name="ConnectIspotApiPort" binding="tns:ConnectIspotApiBinding">
+    <soap:address location="http://api-test.sosia.jp/hpb/ConnectIspotApi.php"/>
+  </port>
+</service>
+</definitions>

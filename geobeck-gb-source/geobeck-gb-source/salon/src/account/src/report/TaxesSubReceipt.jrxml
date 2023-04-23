@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="TaxesSubReceipt"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="155"
+		 pageHeight="155"
+		 columnWidth="155"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.zoom" value="3.4522712143931042" />
+	<property name="ireport.x" value="0" />
+	<property name="ireport.y" value="0" />
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+
+	<field name="taxRateLabel" class="java.lang.String"/>
+	<field name="targetTotal" class="java.lang.Long"/>
+	<field name="tax" class="java.lang.Long"/>
+
+	<variable name="initialStockShopTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="initialStockBusinessTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="initialStockAllTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="incomingStockShopTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="incomingStockBusinessTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="incomingStockAllTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="outgoingStockShop" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="outgoingStockBusinessTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="outgoingStockAllTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="registerStockShopTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="registerStockBusinessTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="registerStockAllTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="existingStockShopTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="existingStockBusinessTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="existingStockAllTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="excessStockShopTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="excessStockBusinessTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+	<variable name="excessStockAllTotal" class="java.lang.Integer" resetType="Report" calculation="Sum">
+	</variable>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="27"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="1"
+						y="0"
+						width="55"
+						height="13"
+						key="textField-4"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="2" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isBold="false" isUnderline="false" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{taxRateLabel} + " 対象計"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="1"
+						y="14"
+						width="55"
+						height="13"
+						key="staticText-3"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[( 内消費税]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="56"
+						y="0"
+						width="75"
+						height="13"
+						key="textField-7"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$F{targetTotal}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="¤ #,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="56"
+						y="14"
+						width="75"
+						height="13"
+						key="textField-8"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$F{tax}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="132"
+						y="14"
+						width="9"
+						height="13"
+						key="staticText-6"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"
+						isRemoveLineWhenBlank="true"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" leftPadding="3" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="8" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[)]]></text>
+				</staticText>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost/hpb/ConnectIspotApi.php?wsdl" uri="xml-resources/web-service-references/ConnectIspotApi/wsdl/localhost/hpb/ConnectIspotApi.php.wsdl"/>
+    <system systemId="http://api-test.sosia.jp/hpb/ConnectIspotApi.php?wsdl" uri="xml-resources/web-service-references/ConnectIspotApi/wsdl/api-test.sosia.jp/hpb/ConnectIspotApi.php.wsdl"/>
+</catalog>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.3" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="analysisTypeGroup">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="rangeGroup">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[500, 500]"/>
+    </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[100, 100]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblActiveCustomers" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNeedsAttention" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNeedsAttention3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtNeedsAttention1" min="-2" pref="50" max="-2" attributes="1"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lblMonth1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtLostCustomers" min="-2" pref="50" max="-2" attributes="1"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lblMonth6" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="txtCustomerRisk1" min="-2" pref="50" max="-2" attributes="1"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lblMonth4" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblMask1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblMask" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblMask2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="txtActiveCustomers" min="-2" pref="50" max="-2" attributes="1"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="lblShop" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="txtNeedsAttention2" min="-2" pref="50" max="-2" attributes="1"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lblMonth2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="txtCustomerRisk2" min="-2" pref="50" max="-2" attributes="1"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lblMonth5" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="46" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="closeButton" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                                  <Component id="renewButton" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="lbLostCustomers" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtActiveCustomers" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="lblShop" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                      <Component id="closeButton" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="renewButton" min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblActiveCustomers" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMask" alignment="3" min="-2" pref="20" max="-2" attributes="1"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                              <Component id="lblNeedsAttention3" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lbLostCustomers" min="-2" pref="24" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="txtNeedsAttention2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lblMonth2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblMask1" alignment="3" min="-2" pref="20" max="-2" attributes="1"/>
+                                      <Component id="txtNeedsAttention1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lblMonth1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lblNeedsAttention" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                      <Component id="txtCustomerRisk2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lblMonth5" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblMask2" alignment="3" min="-2" pref="20" max="-2" attributes="1"/>
+                                      <Component id="txtCustomerRisk1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="lblMonth4" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtLostCustomers" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="lblMonth6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblActiveCustomers">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30a2;&#x30af;&#x30c6;&#x30a3;&#x30d6;&#x9867;&#x5ba2;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtActiveCustomers">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextField(new DecimalFormat(&quot;#,###&quot;));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblShop">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30f6;&#x6708; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMask">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNeedsAttention3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5371;&#x967a;&#x9867;&#x5ba2; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblNeedsAttention">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x8981;&#x6ce8;&#x610f;&#x9867;&#x5ba2;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbLostCustomers">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x5931;&#x5ba2;&#x9867;&#x5ba2; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMask1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtNeedsAttention2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="txtNeedsAttention2CaretUpdate"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextField(new DecimalFormat(&quot;#,###&quot;));"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtNeedsAttention2.getDocument()).setDocumentFilter(new CustomFilter(2, CustomFilter.NUMBER));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMonth2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30f6;&#x6708; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMask2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xff5e;"/>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtCustomerRisk2">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="txtCustomerRisk2CaretUpdate"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextField(new DecimalFormat(&quot;#,###&quot;));"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtCustomerRisk2.getDocument()).setDocumentFilter(new CustomFilter(2, CustomFilter.NUMBER));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMonth5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30f6;&#x6708; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMonth1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30f6;&#x6708; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtNeedsAttention1">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="txtNeedsAttention1CaretUpdate"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextField(new DecimalFormat(&quot;#,###&quot;));"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((PlainDocument)txtNeedsAttention1.getDocument()).setDocumentFilter(new CustomFilter(2, CustomFilter.NUMBER));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMonth4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30f6;&#x6708; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtCustomerRisk1">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextField(new DecimalFormat(&quot;#,###&quot;));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMonth6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x30f6;&#x6708;&#x4ee5;&#x4e0a; "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtLostCustomers">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="enabled" type="boolean" value="false"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JFormattedTextField(new DecimalFormat(&quot;#,###&quot;));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="renewButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/update_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="renewButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="closeButton">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/close_off.jpg&quot;)" type="code"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="SystemInfo.getImageIcon(&quot;/button/common/close_on.jpg&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

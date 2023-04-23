@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="MaterialRate_TOM"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Landscape"
+		 pageWidth="842"
+		 pageHeight="595"
+		 columnWidth="782"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="SUBREPORT_DIR" isForPrompting="true" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["C:\\WORK\\IREPORTS\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="reportPeriod" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="SubName1" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName2" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName3" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName4" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName5" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName6" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName7" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName8" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName9" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName10" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName11" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="SubName12" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+
+	<field name="subReport1" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport1]]></fieldDescription>
+	</field>
+	<field name="subReport10" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport10]]></fieldDescription>
+	</field>
+	<field name="subReport11" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport11]]></fieldDescription>
+	</field>
+	<field name="subReport12" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport12]]></fieldDescription>
+	</field>
+	<field name="subReport2" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport2]]></fieldDescription>
+	</field>
+	<field name="subReport3" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport3]]></fieldDescription>
+	</field>
+	<field name="subReport4" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport4]]></fieldDescription>
+	</field>
+	<field name="subReport5" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport5]]></fieldDescription>
+	</field>
+	<field name="subReport6" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport6]]></fieldDescription>
+	</field>
+	<field name="subReport7" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport7]]></fieldDescription>
+	</field>
+	<field name="subReport8" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport8]]></fieldDescription>
+	</field>
+	<field name="subReport9" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+		<fieldDescription><![CDATA[subReport9]]></fieldDescription>
+	</field>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="50"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="758"
+						height="23"
+						key="staticText-41"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,2" size="18" isBold="true" isPdfEmbedded ="true" pdfEncoding ="Identity-H" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[材料比率]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="26"
+						width="74"
+						height="16"
+						key="staticText-42"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[期間]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="74"
+						y="26"
+						width="20"
+						height="16"
+						key="staticText-44"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font/>
+					</textElement>
+				<text><![CDATA[：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="94"
+						y="26"
+						width="156"
+						height="16"
+						key="textField-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{reportPeriod}]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="370"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="125"
+						height="9"
+						key="staticText-4"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[１月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="131"
+						y="0"
+						width="125"
+						height="9"
+						key="staticText-5"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[２月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="262"
+						y="0"
+						width="125"
+						height="9"
+						key="staticText-6"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[３月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="393"
+						y="0"
+						width="125"
+						height="9"
+						key="staticText-7"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[４月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="524"
+						y="0"
+						width="125"
+						height="9"
+						key="staticText-8"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[５月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="657"
+						y="0"
+						width="125"
+						height="9"
+						key="staticText-9"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[６月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="184"
+						width="125"
+						height="9"
+						key="staticText-45"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[７月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="131"
+						y="184"
+						width="125"
+						height="9"
+						key="staticText-46"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[８月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="262"
+						y="184"
+						width="125"
+						height="9"
+						key="staticText-47"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[９月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="393"
+						y="184"
+						width="125"
+						height="9"
+						key="staticText-48"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[１０月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="524"
+						y="184"
+						width="125"
+						height="9"
+						key="staticText-49"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[１１月度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="657"
+						y="184"
+						width="125"
+						height="9"
+						key="staticText-50"
+						positionType="Float"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" size="9" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[１２月度]]></text>
+				</staticText>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="0"
+						y="9"
+						width="125"
+						height="163"
+						key="subreport-13"/>
+					<dataSourceExpression><![CDATA[$F{subReport1}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName1}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="131"
+						y="9"
+						width="125"
+						height="163"
+						key="subreport-14"/>
+					<dataSourceExpression><![CDATA[$F{subReport2}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName2}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="262"
+						y="9"
+						width="125"
+						height="163"
+						key="subreport-15"/>
+					<dataSourceExpression><![CDATA[$F{subReport3}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName3}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="393"
+						y="9"
+						width="125"
+						height="163"
+						key="subreport-16"/>
+					<dataSourceExpression><![CDATA[$F{subReport4}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName4}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="524"
+						y="9"
+						width="125"
+						height="163"
+						key="subreport-17"/>
+					<dataSourceExpression><![CDATA[$F{subReport5}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName5}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="657"
+						y="9"
+						width="125"
+						height="163"
+						key="subreport-18"/>
+					<dataSourceExpression><![CDATA[$F{subReport6}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName6}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="0"
+						y="193"
+						width="125"
+						height="163"
+						key="subreport-19"
+						positionType="Float"/>
+					<dataSourceExpression><![CDATA[$F{subReport7}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName7}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="131"
+						y="193"
+						width="125"
+						height="163"
+						key="subreport-20"
+						positionType="Float"/>
+					<dataSourceExpression><![CDATA[$F{subReport8}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName8}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="262"
+						y="193"
+						width="125"
+						height="163"
+						key="subreport-21"
+						positionType="Float"/>
+					<dataSourceExpression><![CDATA[$F{subReport9}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName9}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="393"
+						y="193"
+						width="125"
+						height="163"
+						key="subreport-22"
+						positionType="Float"/>
+					<dataSourceExpression><![CDATA[$F{subReport10}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName10}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="524"
+						y="193"
+						width="125"
+						height="163"
+						key="subreport-23"
+						positionType="Float"/>
+					<dataSourceExpression><![CDATA[$F{subReport11}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName11}]]></subreportExpression>
+				</subreport>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="657"
+						y="193"
+						width="125"
+						height="163"
+						key="subreport-24"
+						positionType="Float"/>
+					<dataSourceExpression><![CDATA[$F{subReport12}]]></dataSourceExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SubName12}]]></subreportExpression>
+				</subreport>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="16"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="199"
+						height="16"
+						key="staticText-51"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[SOSIA POS SALON]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="576"
+						y="0"
+						width="88"
+						height="16"
+						key="staticText-52"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ Ｐゴシック" pdfFontName="C:\WINDOWS\Fonts\msgothic.ttc,1" isPdfEmbedded ="true" pdfEncoding ="Identity-H"/>
+					</textElement>
+				<text><![CDATA[出力日    ： ]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="yyyy/MM/dd HH:mm" isBlankWhenNull="false" evaluationTime="Report" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="664"
+						y="0"
+						width="116"
+						height="16"
+						key="textField"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

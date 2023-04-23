@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="null" type="code"/>
+    </Property>
+  </Properties>
+  <AccessibilityProperties>
+    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="985"/>
+    <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value="558"/>
+  </AccessibilityProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="tableAllInfo" min="-2" pref="983" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="tableAllInfo" min="-2" pref="545" max="-2" attributes="0"/>
+              <EmptySpace pref="165" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTable" name="tableAllInfo">
+      <Properties>
+        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+          <Table columnCount="15" rowCount="34">
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 1" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 2" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 3" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 4" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 5" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 6" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 7" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 8" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 9" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 10" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 11" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 12" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 13" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 14" type="java.lang.String"/>
+            <Column editable="true" title="&#x30bf;&#x30a4;&#x30c8;&#x30eb; 15" type="java.lang.String"/>
+          </Table>
+        </Property>
+        <Property name="alignmentX" type="float" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.CENTER_ALIGNMENT" type="code"/>
+        </Property>
+        <Property name="alignmentY" type="float" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.CENTER_ALIGNMENT" type="code"/>
+        </Property>
+        <Property name="autoscrolls" type="boolean" value="false"/>
+        <Property name="cellSelectionEnabled" type="boolean" value="true"/>
+        <Property name="intercellSpacing" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[0, 0]"/>
+        </Property>
+        <Property name="showHorizontalLines" type="boolean" value="false"/>
+        <Property name="showVerticalLines" type="boolean" value="false"/>
+        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="null" type="code"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="tableAllInfo = new javax.swing.JTable(new DefaultTableModel()){&#xa;      public boolean isCellEditable(int rowIndex, int colIndex) {&#xa;          if( ( rowIndex == 0 ) || ( colIndex == 0 ) || ( colIndex == 1 ) )&#xa;              return false;   //Disallow the editing of any cell&#xa;          else if( ( rowIndex == 1 ) || (rowIndex == 5) || (rowIndex == 17) || (rowIndex == 21) )&#xa;          {&#xa;              return false;&#xa;          }&#xa;          else if( colIndex == 14 )&#xa;          {&#xa;              return false;&#xa;          }&#xa;          else&#xa;          {&#xa;              return true;&#xa;          }&#xa;      }&#xa;    };"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

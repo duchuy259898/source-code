@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+<messages>
+	<!--	共通メッセージ    -->
+	<message id="1">
+		<text>既に起動されています。</text>
+	</message>
+	<message id="2">
+		<text>終了してもよろしいですか？</text>
+	</message>
+	<message id="3">
+		<text>権限がありません。</text>
+	</message>
+	<message id="101">
+		<text>「{0}」を登録してもよろしいですか？</text>
+	</message>
+	<message id="102">
+		<text>「{0}」を削除してもよろしいですか？</text>
+	</message>
+	<message id="103">
+		<text>更新しますか？</text>
+	</message>
+	<message id="104">
+		<text>同じ{0}のデータが存在しますが、上書きしてよろしいですか？</text>
+	</message>
+	<message id="105">
+		<text>同じ{0}のデータが存在しますが、新規登録しますか？</text>
+	</message>
+        <message id="106">
+		<text>削除しますか？</text>
+	</message>
+	
+	<message id="200">
+		<text>{0}しました。</text>
+	</message>
+	<message id="201">
+		<text>登録しました。</text>
+	</message>
+	<message id="202">
+		<text>削除しました。</text>
+	</message>
+	
+	<!--	共通エラーメッセージ    -->
+	<message id="1000">
+		<text>データベースに接続できませんでした。</text>
+	</message>
+	<message id="1001">
+		<text>{0}の登録に失敗しました。</text>
+	</message>
+	<message id="1002">
+		<text>{0}の削除に失敗しました。</text>
+	</message>
+	<message id="1099">
+		<text>予期せぬエラーが発生しました。</text>
+	</message>
+	
+	<message id="1100">
+		<text>{0}が入力されていません。</text>
+	</message>
+	<message id="1101">
+		<text>{0}が不正です。</text>
+	</message>
+	<message id="1102">
+		<text>{0}が選択されていません。</text>
+	</message>
+	<message id="1103">
+		<text>{0}は数値を入力してください。</text>
+	</message>
+	<message id="1104">
+		<text>{0}に{1}以前の日付が入力されています。</text>
+	</message>
+	<message id="1105">
+		<text>{0}に{1}より大きい値が入力されています。</text>
+	</message>
+	<message id="1106">
+		<text>{0}に{1}以降の日付が入力されています。</text>
+	</message>
+	<message id="1110">
+		<text>入力されている{0}は存在しません。</text>
+	</message>
+	<message id="1111">
+		<text>{0}が同じデータが既に存在します。</text>
+	</message>
+	<message id="1112">
+		<text>対象データが存在しません。</text>
+	</message>
+	<message id="1113">
+		<text>月締め後のデータは変更できません。</text>
+	</message>
+	<message id="1114">
+		<text>業態主担当指名の場合はスタッフを指名してください。</text>
+	</message>
+	<message id="1115">
+		<text> 既に利用されている業態は削除できません。
+			 利用設定を解除してから削除してください。
+	    </text>
+	</message>
+	
+	<message id="1200">
+		<text>選択されたファイル\n{0}\nが存在しません。</text>
+	</message>
+	<message id="1201">
+		<text>{0}は{1}までです。</text>
+	</message>
+	
+	<message id="1301">
+		<text>{0}に\n{1}しました。</text>
+	</message>
+	
+	<message id="1302">
+		<text>パスワードが違います。</text>
+	</message>
+	<message id="1303">
+		<text>新しいパスワードが一致しません。</text>
+	</message>
+	
+	<message id="1400">
+		<text>デフォルトブラウザが設定されていません。</text>
+	</message>
+	
+	<!--	ログイン用メッセージ    -->
+	<message id="2000">
+		<text>ＩＤまたはパスワードが違います。</text>
+	</message>
+	<message id="2001">
+		<text>使用中のコンピュータでは利用できません。</text>
+	</message>
+	<message id="2002">
+		<text>契約ライセンス数を超えての接続はできません。</text>
+	</message>
+	<message id="2003">
+		<text>ログインに失敗しました。</text>
+	</message>
+	<message id="2004">
+		<text>グループ情報の取得に失敗しました。</text>
+	</message>
+	
+	<!--	精算管理用メッセージ    -->
+	<message id="3000">
+		<text>現金以外の支払金額が、請求金額を超えています。</text>
+	</message>
+	<message id="3001">
+		<text>売掛金回収情報が削除されますが、よろしいですか？</text>
+	</message>
+	<message id="3002">
+		<text>入力されているデータが消えますが、よろしいですか？</text>
+	</message>
+	<message id="3003">
+		<text>お預かり金額が不足しています。\n売掛金処理を行いますか？</text>
+	</message>
+	<message id="3004">
+		<text>月締め処理を行いますか？</text>
+	</message>
+	<message id="3005">
+		<text>全体割引時は割引名の選択をしてください。</text>
+	</message>
+	<message id="3100">
+                <!--IVS_TMTrong start edit 2015/08/28 Bug #42352 -->
+		<!-- <text>現金以外の支払金額が、売掛金額を超えています。</text> -->
+                <text>カードまたは電子マネーの支払金額が請求金額より多くなっています</text>
+                <!--IVS_TMTrong end edit 2015/08/28 Bug #42352 -->
+	</message>
+	<message id="3101">
+		<text>一括割引の金額が、割引対象となっている「{0}」の請求金額を超えています。</text>
+	</message>
+	<message id="3200">
+		<text>消化済みのため伝票の削除は行えません</text>
+	</message>
+	
+	<!--	帳票用メッセージ    -->
+	<message id="4000">
+		<text>先に帳票の出力先、PDFビューアーの設定を行ってください。</text>
+	</message>
+	<message id="4001">
+		<text>出力対象データがありません。</text>
+	</message>
+	
+	<!--	予約管理用メッセージ    -->
+	<message id="5000">
+		<text>予約時間が重複しますが、よろしいですか？</text>
+	</message>
+	<message id="5001">
+		<text>予約を登録しました。</text>
+	</message>
+	<message id="5002">
+		<text>受付を登録しました。</text>
+	</message>
+	<message id="5003">
+		<text>受付を取り消してもよろしいですか？</text>
+	</message>
+	<message id="5004">
+		<text>営業時間外ですが、よろしいですか？</text>
+	</message>
+	<message id="5110">
+		<text>在店処理が失敗しました。</text>
+	</message>
+	<message id="5111">
+		<text>異なる顧客のデータが選択されています。</text>
+	</message>
+	<message id="5112">
+		<text>退店済みのデータが選択されています。</text>
+	</message>
+	<message id="5113">
+		<text>受付状態以外のデータが選択されています。</text>
+	</message>
+	<message id="5114">
+		<text>在店取消処理が失敗しました。</text>
+	</message>
+	<message id="5115">
+		<text>受付済のデータのため、変更できません。</text>
+	</message>
+	<message id="5116">
+		<text>受付済のデータのため、削除できません。</text>
+	</message>
+	<message id="5117">
+		<text>施術開始処理が失敗しました。</text>
+	</message>
+	<message id="5118">
+		<text>在店状態以外のデータが選択されています。</text>
+	</message>
+	<message id="5119">
+		<text>施術待ち状態に戻してもよろしいですか？</text>
+	</message>
+	<message id="5120">
+		<text>施術中取消処理が失敗しました。</text>
+	</message>
+	<message id="5121">
+		<text>施術中のデータのため、変更できません。</text>
+	</message>
+	<message id="5122">
+		<text>施術状態以外のデータが選択されています。</text>
+	</message>
+	<message id="5123">
+		<text>施術担当指名の場合は\nスタッフを選択してください。</text>
+	</message>
+	<message id="5124">
+		<text>施術按分担当指名の場合は\nスタッフを選択してください。</text>
+	</message>
+	<message id="5125">
+		<text>技術メニューが登録されていません。</text>
+	</message>
+	<message id="5126">
+		<text>在店しますか？</text>
+	</message>
+	<message id="5127">
+		<text>シフト外の時間帯が含まれていますが、\n登録してよろしいですか？</text>
+	</message>
+	<message id="5128">
+		<text>\n{0} 様\nご紹介ありがとうございます。\n \n[ご紹介来店者]</text>
+	</message>
+	<message id="5129">
+		<text>\nNo.{0}\n{1}({2}) 様\n来店日:{3}\n</text>
+	</message>
+
+	<!--	顧客管理用メッセージ    -->
+	<message id="6000">
+		<text>誕生日に未来の日付が入力されています。</text>
+	</message>
+	<message id="6001">
+		<text>顧客No.が 「0」 のため\n非会員として登録します。</text>
+	</message>
+	<message id="6002">
+		<text>顧客No.が 「0」 のため\n非会員として更新します。</text>
+	</message>
+	<message id="6003">
+		<text>重複顧客のチェック条件を選択してください。</text>
+	</message>
+	<message id="6004">
+		<text>主体となる顧客を選択してください。</text>
+	</message>
+        <message id="6005">
+		<text>統合する顧客を選択してください。</text>
+	</message>
+        <message id="6006">
+		<text>主体以外の顧客を統合することはできません。</text>
+	</message>
+
+	<!--	マスタ管理用メッセージ    -->
+	<message id="7000">
+		<text>削除するグループに所属しているグループ・店舗の移動先を指定してください。</text>
+	</message>
+	<message id="7001">
+		<text>会社情報は変更できません。</text>
+	</message>
+	<message id="7002">
+		<text>所属グループに処理中のグループが設定されています。</text>
+	</message>
+	<message id="7003">
+		<text>トップのグループは削除できません。</text>
+	</message>
+	<message id="7004">
+		<text>{0}の登録を先に行ってください。</text>
+	</message>
+	
+	<message id="7010">
+		<text>スキンの変更は、再起動後に有効になります。</text>
+	</message>
+	
+        <message id="7011">
+                <text>SOSIA POSを再起動してください。\n※再起動するまで設定は有効になりません。</text>
+        </message>
+        
+	<message id="7100">
+		<text>{0}行が登録できませんでした。</text>
+	</message>
+	
+	<message id="7101">
+		<text>選択された{1}{0}に{1}が登録されているため\n削除することができません。\n\n{1}を削除してから{1}{0}を削除してください。</text>
+	</message>	
+	
+	<!--	メール機能用メッセージ    -->
+	<message id="8000">
+		<text>該当する顧客が存在しません。</text>
+	</message>
+	
+	<message id="10001">
+		<text>顧客の情報を登録します。\n来店回数を確認します。</text>
+	</message>
+	<message id="10002">
+		<text>予約スケジュールの登録、\nチェックイン状況を確認します。</text>
+	</message>
+	<message id="10003">
+		<text>売上伝票の入力、\n売掛金の精算をします。\n売上集計に反映されます。</text>
+	</message>
+	<message id="10004">
+		<text>売上集計、スタッフ成績など、\n各種帳票を印刷します。</text>
+	</message>
+	<message id="10005">
+		<text>Eメールの送信、ハガキ宛名、\n宛名ラベルの作成をします。</text>
+	</message>
+	<message id="10006">
+		<text>販売管理に必要なマスタ情報を\n登録します。</text>
+	</message>
+	<message id="10007">
+		<text>各機能の説明を表示します。\n取扱説明書を印刷します。</text>
+	</message>
+        
+	<!--	商品管理機能メッセージ -->
+	<message id="12000">
+		<text>{0}が登録されていません。\n{0}を登録して出力しますか？</text>
+	</message>
+	<message id="12001">
+		<text>出庫後の在庫がマイナスになっていますが\n登録してよろしいでしょうか。</text>
+	</message>
+	<message id="12002">
+		<text>棚卸期間が31日間以内になるように\n日付を指定してください。</text>
+	</message>
+	<message id="12003">
+		<text>仕入先を選択してください。</text>
+	</message>
+	<message id="12004">
+		<text>集計期間を選択してください。</text>
+	</message>
+	<message id="12005">
+		<text>期間の入力はFROM＜Toで入力してください。</text>
+	</message>
+	<message id="12006">
+		<text>置場を選択してください。</text>
+	</message>
+	<message id="12007">
+		<text>スタッフを選択してください。</text>
+	</message>
+        
+        
+        
+        <!--	目標＆実績＆稼働日数の画面メッセージ -->
+	<message id="13000">
+		<text>入力されたデータを保存しますか？</text>
+	</message>
+        
+        <!--	ポイントカード機能メッセジ   -->
+	<message id="20000">
+		<text>COMポートが正しくありません。</text>
+	</message>
+	<message id="20001">
+		<text>機器の接続を確認できませんでした。\n機器の電源・接続ケーブル等を確認してください。</text>
+	</message>
+    <!-- IVS_LVTU start add 2017/05/10 #9942 [gb]ヘルプ登録後にシフトを「休日」にした場合、予約表示が表示できない -->
+    <message id="20002">
+		<text>既にヘルプ登録されている為、ヘルプ時間外へのシフト変更はできません。</text>
+	</message>
+    <!-- IVS_LVTU end add 2017/05/10 #9942 [gb]ヘルプ登録後にシフトを「休日」にした場合、予約表示が表示できない -->
+    <!-- IVS_LVTU start add 2017/08/03 #9906 [gb]契約解約画面にてチェックなしで解約してご会計へ行く契約追加して清算したら例外発生した。-->
+    <message id="20003">
+		<text>解約したい契約にチェックを入れて下さい。</text>
+	</message>
+    <!-- IVS_LVTU end add 2017/08/03 #9906 [gb]契約解約画面にてチェックなしで解約してご会計へ行く契約追加して清算したら例外発生した。-->
+    <!-- IVS_LVTU start add 2017/08/09 #14354 [gb]お会計画面　消化の残回数の計算不備 -->
+    <message id="20004">
+		<text>消化の数量は１以上で入力して下さい。</text>
+	</message>
+    <!-- IVS_LVTU end add 2017/08/09 #14354 [gb]お会計画面　消化の残回数の計算不備 -->
+    <!-- IVS_LVTU start add 2017/08/23 #22930 [gb]お会計画面＞予約済の契約が削除できてしまう -->
+    <message id="20005">
+		<text>未来日付で予約が登録されているため削除できません。</text>
+	</message>
+    <!-- IVS_LVTU end add 2017/08/23 #22930 [gb]お会計画面＞予約済の契約が削除できてしまう -->
+
+     <!-- IVS_LVTU start add 2017/10/23 #28377 [gb]ログイン：接続情報を削除できるようにする -->
+    <message id="20006">
+		<text>契約ライセンス数を超えての接続はできません。\nログイン情報を削除してログインしますか？</text>
+	</message>
+    <!-- IVS_LVTU end add 2017/10/23 #28377 [gb]ログイン：接続情報を削除できるようにする -->
+    <!-- IVS_LVTU start add 2019/07/23 #97064 [gb]SPOS増税対応 -->
+    <message id="20007">
+	<text>通常税率は同一日に複数登録できません</text>
+    </message>
+    <!-- IVS_LVTU end add 2019/07/23 #97064 [gb]SPOS増税対応 -->
+
+</messages>

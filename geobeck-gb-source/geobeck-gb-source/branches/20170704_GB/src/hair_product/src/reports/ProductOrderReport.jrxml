@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="ProductOrderReport"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="SuplierName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="SuplierFax" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="OrderNo" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="OrderDate" isForPrompting="false" class="java.util.Date"/>
+	<parameter name="ShopName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="ShopZipCode" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="ShopAddress1" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="ShopAddress2" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="StaffName" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="ShopFax" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="ShopTel" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="SummaryPrice" isForPrompting="false" class="java.lang.Integer"/>
+
+	<field name="index" class="java.lang.Integer">
+		<fieldDescription><![CDATA[index]]></fieldDescription>
+	</field>
+	<field name="price" class="java.lang.Integer">
+		<fieldDescription><![CDATA[price]]></fieldDescription>
+	</field>
+	<field name="productId" class="java.lang.String">
+		<fieldDescription><![CDATA[productId]]></fieldDescription>
+	</field>
+	<field name="productName" class="java.lang.String">
+		<fieldDescription><![CDATA[productName]]></fieldDescription>
+	</field>
+	<field name="productPrice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[productPrice]]></fieldDescription>
+	</field>
+	<field name="quantity" class="java.lang.Integer">
+		<fieldDescription><![CDATA[quantity]]></fieldDescription>
+	</field>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="32"  isSplitAllowed="false" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="0"
+						width="535"
+						height="30"
+						key="staticText-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="20" isPdfEmbedded ="false" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[発　注　書]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="163"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="69"
+						width="38"
+						height="13"
+						key="staticText-3"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[FAX：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="111"
+						width="151"
+						height="14"
+						key="staticText-4"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[下記ご注文いたします。]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="381"
+						y="13"
+						width="74"
+						height="14"
+						key="staticText-5"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[発注書No.：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="381"
+						y="27"
+						width="74"
+						height="14"
+						key="staticText-6"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[発 注 日   ：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="308"
+						y="68"
+						width="227"
+						height="14"
+						key="textField-3"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{ShopName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="308"
+						y="82"
+						width="227"
+						height="13"
+						key="textField-6"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{ShopZipCode}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="308"
+						y="95"
+						width="227"
+						height="14"
+						key="textField-7"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{ShopAddress1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="308"
+						y="109"
+						width="227"
+						height="14"
+						key="textField-8"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{ShopAddress2}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="308"
+						y="123"
+						width="39"
+						height="14"
+						key="staticText-7"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[TEL：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="308"
+						y="137"
+						width="51"
+						height="14"
+						key="staticText-8"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[担 当：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="422"
+						y="123"
+						width="33"
+						height="14"
+						key="staticText-9"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[FAX:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="359"
+						y="137"
+						width="176"
+						height="14"
+						key="textField-9"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{StaffName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="347"
+						y="123"
+						width="75"
+						height="14"
+						key="textField-10"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{ShopTel}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="455"
+						y="123"
+						width="80"
+						height="14"
+						key="textField-11"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{ShopFax}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="41"
+						width="151"
+						height="17"
+						key="textField"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" isUnderline="true" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{SuplierName} + " 御中"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="38"
+						y="69"
+						width="113"
+						height="13"
+						key="textField"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{SuplierFax}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="455"
+						y="13"
+						width="80"
+						height="14"
+						key="textField"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$P{OrderNo}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="yyyy/MM/dd" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="455"
+						y="27"
+						width="80"
+						height="14"
+						key="textField"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.util.Date"><![CDATA[$P{OrderDate}]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="13"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="0"
+						width="38"
+						height="13"
+						backcolor="#F0F0F0"
+						key="staticText-10"/>
+					<box topBorder="1Point" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement>
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="38"
+						y="0"
+						width="113"
+						height="13"
+						backcolor="#F0F0F0"
+						key="staticText-11"/>
+					<box topBorder="1Point" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[型番]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="151"
+						y="0"
+						width="191"
+						height="13"
+						backcolor="#F0F0F0"
+						key="staticText-12"/>
+					<box topBorder="1Point" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[商品名]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="342"
+						y="0"
+						width="65"
+						height="13"
+						backcolor="#F0F0F0"
+						key="staticText-13"/>
+					<box topBorder="1Point" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[単価]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="407"
+						y="0"
+						width="58"
+						height="13"
+						backcolor="#F0F0F0"
+						key="staticText-14"/>
+					<box topBorder="1Point" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[数量]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="465"
+						y="0"
+						width="70"
+						height="13"
+						backcolor="#F0F0F0"
+						key="staticText-15"/>
+					<box topBorder="1Point" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="1Point" rightBorderColor="#000000" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[金額]]></text>
+				</staticText>
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="13"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="0"
+						width="38"
+						height="13"
+						key="textField-12"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" leftPadding="2" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{index}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="38"
+						y="0"
+						width="113"
+						height="13"
+						key="textField-13"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="2" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{productId}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="151"
+						y="0"
+						width="191"
+						height="13"
+						key="textField-14"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" leftPadding="4" rightBorder="None" rightBorderColor="#000000" rightPadding="2" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{productName}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="342"
+						y="0"
+						width="65"
+						height="13"
+						key="textField-15"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{productPrice}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="407"
+						y="0"
+						width="58"
+						height="13"
+						key="textField-16"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" rightPadding="4" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{quantity}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="465"
+						y="0"
+						width="70"
+						height="13"
+						key="textField-17"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="1Point" rightBorderColor="#000000" rightPadding="4" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{price}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="13"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="342"
+						y="0"
+						width="123"
+						height="13"
+						backcolor="#F0F0F0"
+						key="staticText-16"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[合計]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="465"
+						y="0"
+						width="70"
+						height="13"
+						key="textField-18"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="1Point" leftBorderColor="#000000" rightBorder="1Point" rightBorderColor="#000000" rightPadding="4" bottomBorder="1Point" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$P{SummaryPrice}]]></textFieldExpression>
+				</textField>
+			</band>
+		</summary>
+</jasperReport>
